@@ -9,6 +9,12 @@
             "homepage": "https://github.com/leofeyer"
         }
     ],
+    "support": {
+        "docs": "https://docs.contao.org",
+        "forum": "https://community.contao.org",
+        "issues": "https://github.com/contao/calendar-bundle/issues",
+        "source": "https://github.com/contao/calendar-bundle"
+    },
     "require": {
         "php": "^5.6|^7.0",
         "symfony/framework-bundle": "^3.3",
