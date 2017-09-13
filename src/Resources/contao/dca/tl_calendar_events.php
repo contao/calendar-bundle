@@ -677,7 +677,7 @@ class tl_calendar_events extends Backend
 								   ->execute($varValue);
 
 		// Check whether the event alias exists
-		if ($objAlias->numRows > 1)
+		if ($objAlias->numRows > ($autoAlias ? 0 : 1))
 		{
 			if (!$autoAlias)
 			{
