@@ -48,10 +48,13 @@ class InsertTagsListener
      * Replaces calendar insert tags.
      *
      * @param string $tag
+     * @param bool   $useCache
+     * @param mixed  $cacheValue
+     * @param array  $flags
      *
      * @return string|false
      */
-    public function onReplaceInsertTags(string $tag)
+    public function onReplaceInsertTags(string $tag, bool $useCache, $cacheValue, array $flags)
     {
         $elements = explode('::', $tag);
         $key = strtolower($elements[0]);
@@ -61,7 +64,7 @@ class InsertTagsListener
         }
 
         if (\in_array($key, self::$supportedTags, true)) {
-            return $this->replaceEventInsertTag($key, $elements[1]);
+            return $this->replaceEventInsertTag($key, $elements[1], $flags);
         }
 
         return false;
@@ -93,10 +96,11 @@ class InsertTagsListener
      *
      * @param string $insertTag
      * @param string $idOrAlias
+     * @param array  $flags
      *
      * @return string
      */
-    private function replaceEventInsertTag(string $insertTag, string $idOrAlias): string
+    private function replaceEventInsertTag(string $insertTag, string $idOrAlias, array $flags): string
     {
         $this->framework->initialize();
 
@@ -107,7 +111,7 @@ class InsertTagsListener
             return '';
         }
 
-        return $this->generateReplacement($event, $insertTag);
+        return $this->generateReplacement($event, $insertTag, $flags);
     }
 
     /**
@@ -115,10 +119,11 @@ class InsertTagsListener
      *
      * @param CalendarEventsModel $event
      * @param string              $insertTag
+     * @param array               $flags
      *
      * @return string
      */
-    private function generateReplacement(CalendarEventsModel $event, string $insertTag): string
+    private function generateReplacement(CalendarEventsModel $event, string $insertTag, array $flags): string
     {
         /** @var Events $adapter */
         $adapter = $this->framework->getAdapter(Events::class);
@@ -140,7 +145,7 @@ class InsertTagsListener
                 );
 
             case 'event_url':
-                return $adapter->generateEventUrl($event);
+                return $adapter->generateEventUrl($event, \in_array('absolute', $flags, true));
 
             case 'event_title':
                 return StringUtil::specialchars($event->title);

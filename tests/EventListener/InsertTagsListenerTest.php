@@ -64,27 +64,32 @@ class InsertTagsListenerTest extends ContaoTestCase
 
         $this->assertSame(
             '<a href="events/the-foobar-event.html" title="The &quot;foobar&quot; event">The "foobar" event</a>',
-            $listener->onReplaceInsertTags('event::2')
+            $listener->onReplaceInsertTags('event::2', false, null, [])
         );
 
         $this->assertSame(
             '<a href="events/the-foobar-event.html" title="The &quot;foobar&quot; event">',
-            $listener->onReplaceInsertTags('event_open::2')
+            $listener->onReplaceInsertTags('event_open::2', false, null, [])
         );
 
         $this->assertSame(
             'events/the-foobar-event.html',
-            $listener->onReplaceInsertTags('event_url::2')
+            $listener->onReplaceInsertTags('event_url::2', false, null, [])
+        );
+
+        $this->assertSame(
+            'http://domain.tld/events/the-foobar-event.html',
+            $listener->onReplaceInsertTags('event_url::2', false, null, ['absolute'])
         );
 
         $this->assertSame(
             'The &quot;foobar&quot; event',
-            $listener->onReplaceInsertTags('event_title::2')
+            $listener->onReplaceInsertTags('event_title::2', false, null, [])
         );
 
         $this->assertSame(
             '<p>The annual foobar event.</p>',
-            $listener->onReplaceInsertTags('event_teaser::2')
+            $listener->onReplaceInsertTags('event_teaser::2', false, null, [])
         );
     }
 
@@ -92,7 +97,7 @@ class InsertTagsListenerTest extends ContaoTestCase
     {
         $listener = new InsertTagsListener($this->mockContaoFramework());
 
-        $this->assertFalse($listener->onReplaceInsertTags('link_url::2'));
+        $this->assertFalse($listener->onReplaceInsertTags('link_url::2', false, null, []));
     }
 
     public function testReturnsAnEmptyStringIfThereIsNoModel(): void
@@ -104,7 +109,7 @@ class InsertTagsListenerTest extends ContaoTestCase
 
         $listener = new InsertTagsListener($this->mockContaoFramework($adapters));
 
-        $this->assertSame('', $listener->onReplaceInsertTags('calendar_feed::3'));
-        $this->assertSame('', $listener->onReplaceInsertTags('event_url::3'));
+        $this->assertSame('', $listener->onReplaceInsertTags('calendar_feed::3', false, null, []));
+        $this->assertSame('', $listener->onReplaceInsertTags('event_url::3', false, null, []));
     }
 }
