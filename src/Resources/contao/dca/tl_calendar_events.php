@@ -671,20 +671,15 @@ class tl_calendar_events extends Backend
 		{
 			$autoAlias = true;
 			$slugOptions = [];
-			$objCalendar = CalendarModel::findByPk($dc->activeRecord->pid);
 
-			if ($objCalendar !== null)
+			// Read the slug options from the associated page
+			if (($objCalendar = CalendarModel::findByPk($dc->activeRecord->pid)) !== null && ($objPage = PageModel::findWithDetails($objCalendar->jumpTo)) !== null)
 			{
-				$objPage = PageModel::findWithDetails($objCalendar->jumpTo);
+				$slugOptions['locale'] = $objPage->language;
 
-				if ($objPage !== null)
+				if ($objPage->validAliasCharacters)
 				{
-					$slugOptions['locale'] = $objPage->language;
-
-					if ($objPage->validAliasCharacters)
-					{
-						$slugOptions['validChars'] = $objPage->validAliasCharacters;
-					}
+					$slugOptions['validChars'] = $objPage->validAliasCharacters;
 				}
 
 				$varValue = System::getContainer()->get('contao.slug.generator')->generate(StringUtil::stripInsertTags($dc->activeRecord->title), $slugOptions);
