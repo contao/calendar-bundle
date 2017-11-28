@@ -54,7 +54,7 @@ class InsertTagsListener
      *
      * @return string|false
      */
-    public function onReplaceInsertTags(string $tag, bool $useCache, $cacheValue, array $flags)
+    public function onReplaceInsertTags(string $tag, bool $useCache = false, $cacheValue = null, array $flags = [])
     {
         $elements = explode('::', $tag);
         $key = strtolower($elements[0]);
@@ -132,7 +132,7 @@ class InsertTagsListener
             case 'event':
                 return sprintf(
                     '<a href="%s" title="%s">%s</a>',
-                    $adapter->generateEventUrl($event),
+                    $adapter->generateEventUrl($event, \in_array('absolute', $flags, true)),
                     StringUtil::specialchars($event->title),
                     $event->title
                 );
@@ -140,7 +140,7 @@ class InsertTagsListener
             case 'event_open':
                 return sprintf(
                     '<a href="%s" title="%s">',
-                    $adapter->generateEventUrl($event),
+                    $adapter->generateEventUrl($event, \in_array('absolute', $flags, true)),
                     StringUtil::specialchars($event->title)
                 );
 

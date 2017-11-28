@@ -390,7 +390,7 @@ abstract class Events extends \Module
 	 * Generate a URL and return it as string
 	 *
 	 * @param CalendarEventsModel $objEvent
-	 * @param bool                $blnAbsolute
+	 * @param boolean             $blnAbsolute
 	 *
 	 * @return string
 	 */
@@ -434,7 +434,7 @@ abstract class Events extends \Module
 			case 'article':
 				if (($objArticle = \ArticleModel::findByPk($objEvent->articleId, array('eager'=>true))) !== null && ($objPid = $objArticle->getRelated('pid')) instanceof PageModel)
 				{
-				    $params = '/articles/' . ($objArticle->alias ?: $objArticle->id);
+					$params = '/articles/' . ($objArticle->alias ?: $objArticle->id);
 
 					/** @var PageModel $objPid */
 					self::$arrUrlCache[$strCacheKey] = ampersand($blnAbsolute ? $objPid->getAbsoluteUrl($params) : $objPid->getFrontendUrl($params));
@@ -453,7 +453,8 @@ abstract class Events extends \Module
 			}
 			else
 			{
-			    $params = (\Config::get('useAutoItem') ? '/' : '/events/') . ($objEvent->alias ?: $objEvent->id);
+				$params = (\Config::get('useAutoItem') ? '/' : '/events/') . ($objEvent->alias ?: $objEvent->id);
+
 				self::$arrUrlCache[$strCacheKey] = ampersand($blnAbsolute ? $objPage->getAbsoluteUrl($params) : $objPage->getFrontendUrl($params));
 			}
 		}
