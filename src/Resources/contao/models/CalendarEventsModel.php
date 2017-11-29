@@ -26,7 +26,7 @@ namespace Contao;
  * @property integer $startDate
  * @property integer $endDate
  * @property string  $location
- * @property string  $locationCity
+ * @property string  $address
  * @property string  $teaser
  * @property boolean $addImage
  * @property string  $singleSRC
@@ -69,7 +69,7 @@ namespace Contao;
  * @method static CalendarEventsModel|null findOneByStartDate($val, array $opt=array())
  * @method static CalendarEventsModel|null findOneByEndDate($val, array $opt=array())
  * @method static CalendarEventsModel|null findOneByLocation($val, array $opt=array())
- * @method static CalendarEventsModel|null findOneByLocationCity($val, array $opt=array())
+ * @method static CalendarEventsModel|null findOneByAddress($val, array $opt=array())
  * @method static CalendarEventsModel|null findOneByTeaser($val, array $opt=array())
  * @method static CalendarEventsModel|null findOneByAddImage($val, array $opt=array())
  * @method static CalendarEventsModel|null findOneBySingleSRC($val, array $opt=array())
@@ -108,7 +108,7 @@ namespace Contao;
  * @method static Model\Collection|CalendarEventsModel[]|CalendarEventsModel|null findByStartDate($val, array $opt=array())
  * @method static Model\Collection|CalendarEventsModel[]|CalendarEventsModel|null findByEndDate($val, array $opt=array())
  * @method static Model\Collection|CalendarEventsModel[]|CalendarEventsModel|null findByLocation($val, array $opt=array())
- * @method static Model\Collection|CalendarEventsModel[]|CalendarEventsModel|null findByLocationCity($val, array $opt=array())
+ * @method static Model\Collection|CalendarEventsModel[]|CalendarEventsModel|null findByAddress($val, array $opt=array())
  * @method static Model\Collection|CalendarEventsModel[]|CalendarEventsModel|null findByTeaser($val, array $opt=array())
  * @method static Model\Collection|CalendarEventsModel[]|CalendarEventsModel|null findByAddImage($val, array $opt=array())
  * @method static Model\Collection|CalendarEventsModel[]|CalendarEventsModel|null findBySingleSRC($val, array $opt=array())
@@ -151,7 +151,7 @@ namespace Contao;
  * @method static integer countByStartDate($val, array $opt=array())
  * @method static integer countByEndDate($val, array $opt=array())
  * @method static integer countByLocation($val, array $opt=array())
- * @method static integer countByLocationCity($val, array $opt=array())
+ * @method static integer countByAddress($val, array $opt=array())
  * @method static integer countByTeaser($val, array $opt=array())
  * @method static integer countByAddImage($val, array $opt=array())
  * @method static integer countBySingleSRC($val, array $opt=array())
