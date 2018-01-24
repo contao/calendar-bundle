@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao.
  *
@@ -16,11 +18,6 @@ use Contao\CoreBundle\Framework\ContaoFrameworkInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
 
-/**
- * Adds a query to the front end preview URL.
- *
- * @author Leo Feyer <https://github.com/leofeyer>
- */
 class PreviewUrlCreateListener
 {
     /**
@@ -34,8 +31,6 @@ class PreviewUrlCreateListener
     private $framework;
 
     /**
-     * Constructor.
-     *
      * @param RequestStack             $requestStack
      * @param ContaoFrameworkInterface $framework
      */
@@ -49,14 +44,20 @@ class PreviewUrlCreateListener
      * Adds a query to the front end preview URL.
      *
      * @param PreviewUrlCreateEvent $event
+     * 
+     * @throws \RuntimeException
      */
-    public function onPreviewUrlCreate(PreviewUrlCreateEvent $event)
+    public function onPreviewUrlCreate(PreviewUrlCreateEvent $event): void
     {
         if (!$this->framework->isInitialized() || 'calendar' !== $event->getKey()) {
             return;
         }
 
         $request = $this->requestStack->getCurrentRequest();
+
+        if (null === $request) {
+            throw new \RuntimeException('The request stack did not contain a request');
+        }
 
         // Return on the calendar list page
         if ('tl_calendar_events' === $request->query->get('table') && !$request->query->has('act')) {
@@ -91,11 +92,11 @@ class PreviewUrlCreateListener
     /**
      * Returns the event model.
      *
-     * @param int $id The ID
+     * @param int|string $id The ID
      *
      * @return CalendarEventsModel|null
      */
-    private function getEventModel($id)
+    private function getEventModel($id): ?CalendarEventsModel
     {
         /** @var CalendarEventsModel $adapter */
         $adapter = $this->framework->getAdapter(CalendarEventsModel::class);

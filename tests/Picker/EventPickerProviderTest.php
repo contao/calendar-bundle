@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao.
  *
@@ -13,28 +15,26 @@ namespace Contao\CalendarBundle\Tests\Picker;
 use Contao\BackendUser;
 use Contao\CalendarBundle\Picker\EventPickerProvider;
 use Contao\CoreBundle\Picker\PickerConfig;
+use Contao\TestCase\ContaoTestCase;
 use Knp\Menu\FactoryInterface;
-use PHPUnit\Framework\TestCase;
+use Knp\Menu\ItemInterface;
+use Knp\Menu\MenuItem;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+use Symfony\Component\Translation\TranslatorInterface;
 
-/**
- * Tests the EventPickerProvider class.
- *
- * @author Andreas Schempp <https://github.com/aschempp>
- */
-class EventPickerProviderTest extends TestCase
+class EventPickerProviderTest extends ContaoTestCase
 {
     /**
      * @var EventPickerProvider
      */
-    protected $provider;
+    private $provider;
 
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -42,7 +42,17 @@ class EventPickerProviderTest extends TestCase
 
         $menuFactory
             ->method('createItem')
-            ->willReturnArgument(1)
+            ->willReturnCallback(
+                function (string $name, array $data) use ($menuFactory): ItemInterface {
+                    $item = new MenuItem($name, $menuFactory);
+                    $item->setLabel($data['label']);
+                    $item->setLinkAttributes($data['linkAttributes']);
+                    $item->setCurrent($data['current']);
+                    $item->setUri($data['uri']);
+
+                    return $item;
+                }
+            )
         ;
 
         $router = $this->createMock(RouterInterface::class);
@@ -50,39 +60,28 @@ class EventPickerProviderTest extends TestCase
         $router
             ->method('generate')
             ->willReturnCallback(
-                function ($name, array $params) {
+                function (string $name, array $params): string {
                     return $name.'?'.http_build_query($params);
                 }
             )
         ;
 
-        $this->provider = new EventPickerProvider($menuFactory, $router);
+        $translator = $this->createMock(TranslatorInterface::class);
 
-        $GLOBALS['TL_LANG']['MSC']['eventPicker'] = 'Event picker';
+        $translator
+            ->method('trans')
+            ->willReturn('Event picker')
+        ;
+
+        $this->provider = new EventPickerProvider($menuFactory, $router, $translator);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    protected function tearDown()
-    {
-        parent::tearDown();
-
-        unset($GLOBALS['TL_LANG']);
-    }
-
-    /**
-     * Tests the object instantiation.
-     */
-    public function testCanBeInstantiated()
+    public function testCanBeInstantiated(): void
     {
         $this->assertInstanceOf('Contao\CalendarBundle\Picker\EventPickerProvider', $this->provider);
     }
 
-    /**
-     * Tests the createMenuItem() method.
-     */
-    public function testCreatesTheMenuItem()
+    public function testCreatesTheMenuItem(): void
     {
         $picker = json_encode([
             'context' => 'link',
@@ -95,74 +94,35 @@ class EventPickerProviderTest extends TestCase
             $picker = $encoded;
         }
 
-        $this->assertSame(
-            [
-                'label' => 'Event picker',
-                'linkAttributes' => ['class' => 'eventPicker'],
-                'current' => true,
-                'uri' => 'contao_backend?do=calendar&popup=1&picker='.strtr(base64_encode($picker), '+/=', '-_,'),
-            ], $this->provider->createMenuItem(new PickerConfig('link', [], '', 'eventPicker'))
-        );
+        $item = $this->provider->createMenuItem(new PickerConfig('link', [], '', 'eventPicker'));
+        $uri = 'contao_backend?do=calendar&popup=1&picker='.strtr(base64_encode($picker), '+/=', '-_,');
+
+        $this->assertSame('Event picker', $item->getLabel());
+        $this->assertSame(['class' => 'eventPicker'], $item->getLinkAttributes());
+        $this->assertTrue($item->isCurrent());
+        $this->assertSame($uri, $item->getUri());
     }
 
-    /**
-     * Tests the isCurrent() method.
-     */
-    public function testChecksIfAMenuItemIsCurrent()
+    public function testChecksIfAMenuItemIsCurrent(): void
     {
         $this->assertTrue($this->provider->isCurrent(new PickerConfig('link', [], '', 'eventPicker')));
         $this->assertFalse($this->provider->isCurrent(new PickerConfig('link', [], '', 'filePicker')));
     }
 
-    /**
-     * Tests the getName() method.
-     */
-    public function testReturnsTheCorrectName()
+    public function testReturnsTheCorrectName(): void
     {
         $this->assertSame('eventPicker', $this->provider->getName());
     }
 
-    /**
-     * Tests the supportsContext() method.
-     */
-    public function testChecksIfAContextIsSupported()
+    public function testChecksIfAContextIsSupported(): void
     {
-        $user = $this
-            ->getMockBuilder(BackendUser::class)
-            ->disableOriginalConstructor()
-            ->setMethods(['hasAccess'])
-            ->getMock()
-        ;
-
-        $user
-            ->method('hasAccess')
-            ->willReturn(true)
-        ;
-
-        $token = $this->createMock(TokenInterface::class);
-
-        $token
-            ->method('getUser')
-            ->willReturn($user)
-        ;
-
-        $tokenStorage = $this->createMock(TokenStorageInterface::class);
-
-        $tokenStorage
-            ->method('getToken')
-            ->willReturn($token)
-        ;
-
-        $this->provider->setTokenStorage($tokenStorage);
+        $this->provider->setTokenStorage($this->mockTokenStorage(BackendUser::class));
 
         $this->assertTrue($this->provider->supportsContext('link'));
         $this->assertFalse($this->provider->supportsContext('file'));
     }
 
-    /**
-     * Tests the supportsContext() method without token storage.
-     */
-    public function testFailsToCheckTheContextIfThereIsNoTokenStorage()
+    public function testFailsToCheckTheContextIfThereIsNoTokenStorage(): void
     {
         $this->expectException('RuntimeException');
         $this->expectExceptionMessage('No token storage provided');
@@ -170,10 +130,7 @@ class EventPickerProviderTest extends TestCase
         $this->provider->supportsContext('link');
     }
 
-    /**
-     * Tests the supportsContext() method without token.
-     */
-    public function testFailsToCheckTheContextIfThereIsNoToken()
+    public function testFailsToCheckTheContextIfThereIsNoToken(): void
     {
         $tokenStorage = $this->createMock(TokenStorageInterface::class);
 
@@ -190,10 +147,7 @@ class EventPickerProviderTest extends TestCase
         $this->provider->supportsContext('link');
     }
 
-    /**
-     * Tests the supportsContext() method without a user object.
-     */
-    public function testFailsToCheckTheContextIfThereIsNoUser()
+    public function testFailsToCheckTheContextIfThereIsNoUser(): void
     {
         $token = $this->createMock(TokenInterface::class);
 
@@ -217,27 +171,18 @@ class EventPickerProviderTest extends TestCase
         $this->provider->supportsContext('link');
     }
 
-    /**
-     * Tests the supportsValue() method.
-     */
-    public function testChecksIfAValueIsSupported()
+    public function testChecksIfAValueIsSupported(): void
     {
         $this->assertTrue($this->provider->supportsValue(new PickerConfig('link', [], '{{event_url::5}}')));
         $this->assertFalse($this->provider->supportsValue(new PickerConfig('link', [], '{{link_url::5}}')));
     }
 
-    /**
-     * Tests the getDcaTable() method.
-     */
-    public function testReturnsTheDcaTable()
+    public function testReturnsTheDcaTable(): void
     {
         $this->assertSame('tl_calendar_events', $this->provider->getDcaTable());
     }
 
-    /**
-     * Tests the getDcaAttributes() method.
-     */
-    public function testReturnsTheDcaAttributes()
+    public function testReturnsTheDcaAttributes(): void
     {
         $this->assertSame(
             [
@@ -248,15 +193,14 @@ class EventPickerProviderTest extends TestCase
         );
 
         $this->assertSame(
-            ['fieldType' => 'radio'],
+            [
+                'fieldType' => 'radio',
+            ],
             $this->provider->getDcaAttributes(new PickerConfig('link', [], '{{link_url::5}}'))
         );
     }
 
-    /**
-     * Tests the convertDcaValue() method.
-     */
-    public function testConvertsTheDcaValue()
+    public function testConvertsTheDcaValue(): void
     {
         $this->assertSame('{{event_url::5}}', $this->provider->convertDcaValue(new PickerConfig('link'), 5));
     }

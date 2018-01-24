@@ -66,12 +66,16 @@
         <target>Epeni datën për mbarimin e ngjarjes ose lëreni zbrazët për një lajm ditorë.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.0">
-        <source>Event location</source>
-        <target>Vendi ngjarjes</target>
+        <source>Location name</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.1">
-        <source>Here you can enter the event location.</source>
-        <target>Këtu mundeni të futni vendin e ngjarjes.</target>
+        <source>Here you can enter the name of the event location.</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.0">
+        <source>Location address</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.1">
+        <source>Here you can enter the address of the event location.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.teaser.0">
         <source>Event teaser</source>
@@ -174,12 +178,10 @@
         <target>Shtypja e butonit &quot;Lexo më shumë...&quot; i posedon vizitorët në një faqe të artikujve.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.0">
-        <source>External URL</source>
-        <target>URL ekstern</target>
+        <source>Custom URL</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.1">
-        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to an external website.</source>
-        <target>Shtypja e butonit &quot;Lexo më shumë...&quot; i posedon vizitorët në një faqe të jashtme, ku mund ta lexojnë tërë lajmin.</target>
+        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to custom URL.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.jumpTo.0">
         <source>Redirect page</source>

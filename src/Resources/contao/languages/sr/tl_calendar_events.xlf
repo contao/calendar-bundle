@@ -66,12 +66,16 @@
         <target>Остави празно ради креирања једнодневног дешавања.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.0">
-        <source>Event location</source>
-        <target>Место дешавања</target>
+        <source>Location name</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.1">
-        <source>Here you can enter the event location.</source>
-        <target>Овде можете унети место дешавања.</target>
+        <source>Here you can enter the name of the event location.</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.0">
+        <source>Location address</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.1">
+        <source>Here you can enter the address of the event location.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.teaser.0">
         <source>Event teaser</source>
@@ -174,12 +178,10 @@
         <target>Кликом на &quot;Детаљније...&quot;, посетиоци ће бити преусмерени на чланак.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.0">
-        <source>External URL</source>
-        <target>Вањски URL</target>
+        <source>Custom URL</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.1">
-        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to an external website.</source>
-        <target>Кликом на &quot;Детаљније...&quot;, посетиоци ће бити преусмерени према вањском сајту.</target>
+        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to custom URL.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.jumpTo.0">
         <source>Redirect page</source>

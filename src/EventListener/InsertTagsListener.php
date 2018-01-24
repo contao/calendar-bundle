@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of Contao.
  *
@@ -16,11 +18,6 @@ use Contao\CoreBundle\Framework\ContaoFrameworkInterface;
 use Contao\Events;
 use Contao\StringUtil;
 
-/**
- * Handles insert tags for calendars.
- *
- * @author Andreas Schempp <https://github.com/aschempp>
- */
 class InsertTagsListener
 {
     /**
@@ -31,7 +28,7 @@ class InsertTagsListener
     /**
      * @var array
      */
-    private $supportedTags = [
+    private static $supportedTags = [
         'event',
         'event_open',
         'event_url',
@@ -40,8 +37,6 @@ class InsertTagsListener
     ];
 
     /**
-     * Constructor.
-     *
      * @param ContaoFrameworkInterface $framework
      */
     public function __construct(ContaoFrameworkInterface $framework)
@@ -53,10 +48,13 @@ class InsertTagsListener
      * Replaces calendar insert tags.
      *
      * @param string $tag
+     * @param bool   $useCache
+     * @param mixed  $cacheValue
+     * @param array  $flags
      *
      * @return string|false
      */
-    public function onReplaceInsertTags($tag)
+    public function onReplaceInsertTags(string $tag, bool $useCache = false, $cacheValue = null, array $flags = [])
     {
         $elements = explode('::', $tag);
         $key = strtolower($elements[0]);
@@ -65,8 +63,8 @@ class InsertTagsListener
             return $this->replaceFeedInsertTag($elements[1]);
         }
 
-        if (\in_array($key, $this->supportedTags, true)) {
-            return $this->replaceEventInsertTag($key, $elements[1]);
+        if (\in_array($key, self::$supportedTags, true)) {
+            return $this->replaceEventInsertTag($key, $elements[1], $flags);
         }
 
         return false;
@@ -75,11 +73,11 @@ class InsertTagsListener
     /**
      * Replaces the calendar feed insert tag.
      *
-     * @param int $feedId
+     * @param string $feedId
      *
      * @return string
      */
-    private function replaceFeedInsertTag($feedId)
+    private function replaceFeedInsertTag(string $feedId): string
     {
         $this->framework->initialize();
 
@@ -98,10 +96,11 @@ class InsertTagsListener
      *
      * @param string $insertTag
      * @param string $idOrAlias
+     * @param array  $flags
      *
      * @return string
      */
-    private function replaceEventInsertTag($insertTag, $idOrAlias)
+    private function replaceEventInsertTag(string $insertTag, string $idOrAlias, array $flags): string
     {
         $this->framework->initialize();
 
@@ -112,7 +111,7 @@ class InsertTagsListener
             return '';
         }
 
-        return $this->generateReplacement($event, $insertTag);
+        return $this->generateReplacement($event, $insertTag, $flags);
     }
 
     /**
@@ -120,10 +119,11 @@ class InsertTagsListener
      *
      * @param CalendarEventsModel $event
      * @param string              $insertTag
+     * @param array               $flags
      *
      * @return string
      */
-    private function generateReplacement(CalendarEventsModel $event, $insertTag)
+    private function generateReplacement(CalendarEventsModel $event, string $insertTag, array $flags): string
     {
         /** @var Events $adapter */
         $adapter = $this->framework->getAdapter(Events::class);
@@ -132,7 +132,7 @@ class InsertTagsListener
             case 'event':
                 return sprintf(
                     '<a href="%s" title="%s">%s</a>',
-                    $adapter->generateEventUrl($event),
+                    $adapter->generateEventUrl($event, \in_array('absolute', $flags, true)),
                     StringUtil::specialchars($event->title),
                     $event->title
                 );
@@ -140,12 +140,12 @@ class InsertTagsListener
             case 'event_open':
                 return sprintf(
                     '<a href="%s" title="%s">',
-                    $adapter->generateEventUrl($event),
+                    $adapter->generateEventUrl($event, \in_array('absolute', $flags, true)),
                     StringUtil::specialchars($event->title)
                 );
 
             case 'event_url':
-                return $adapter->generateEventUrl($event);
+                return $adapter->generateEventUrl($event, \in_array('absolute', $flags, true));
 
             case 'event_title':
                 return StringUtil::specialchars($event->title);

@@ -51,10 +51,16 @@
         <source>Leave blank to create a single day event.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.0">
-        <source>Event location</source>
+        <source>Location name</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.1">
-        <source>Here you can enter the event location.</source>
+        <source>Here you can enter the name of the event location.</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.0">
+        <source>Location address</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.1">
+        <source>Here you can enter the address of the event location.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.teaser.0">
         <source>Event teaser</source>
@@ -132,10 +138,10 @@
         <source>By clicking the "read more …" button, visitors will be redirected to an article.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.0">
-        <source>External URL</source>
+        <source>Custom URL</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.1">
-        <source>By clicking the "read more …" button, visitors will be redirected to an external website.</source>
+        <source>By clicking the "read more …" button, visitors will be redirected to custom URL.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.jumpTo.0">
         <source>Redirect page</source>

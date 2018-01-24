@@ -66,12 +66,16 @@
         <target>Zadajte prosím dátum konca udalosti alebo ho ponechajte prázdne, ak chcete vytvoriť jednodňovú udalosť.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.0">
-        <source>Event location</source>
-        <target>Miesto udalosti</target>
+        <source>Location name</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.1">
-        <source>Here you can enter the event location.</source>
-        <target>Tu môžete zadať miesto konania udalosti.</target>
+        <source>Here you can enter the name of the event location.</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.0">
+        <source>Location address</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.1">
+        <source>Here you can enter the address of the event location.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.teaser.0">
         <source>Event teaser</source>
@@ -174,12 +178,10 @@
         <target>Kliknutím na odkaz &quot;čítať ďalej...&quot; budú návštevníci presmerovaní na článok.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.0">
-        <source>External URL</source>
-        <target>Externá URL</target>
+        <source>Custom URL</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.1">
-        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to an external website.</source>
-        <target>Kliknutím na odkaz &quot;čítať ďalej...&quot; budú návštevníci presmerovaní na externú stránku.</target>
+        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to custom URL.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.jumpTo.0">
         <source>Redirect page</source>

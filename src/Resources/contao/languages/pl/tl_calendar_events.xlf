@@ -66,12 +66,16 @@
         <target>Wprowadź dzień zakończenia wydarzenia lub pozostaw to pole puste dla wydarzenia całodziennego.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.0">
-        <source>Event location</source>
-        <target>Lokacja wydarzenia</target>
+        <source>Location name</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.1">
-        <source>Here you can enter the event location.</source>
-        <target>Tutaj możesz wprowadzić lokację wydarzenia.</target>
+        <source>Here you can enter the name of the event location.</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.0">
+        <source>Location address</source>
+      </trans-unit>
+      <trans-unit id="tl_calendar_events.address.1">
+        <source>Here you can enter the address of the event location.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.teaser.0">
         <source>Event teaser</source>
@@ -174,12 +178,10 @@
         <target>Kliknięcie w przycisk &quot;czytaj więcej...&quot;, przekieruje do artykułu</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.0">
-        <source>External URL</source>
-        <target>zewnętrzny URL</target>
+        <source>Custom URL</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.1">
-        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to an external website.</source>
-        <target>Klikając odnośnik &quot;Więcej...&quot; odwiedzający zostaną przekierowani do zewnętrznej strony, gdzie mogą przeczytać cały artykuł.</target>
+        <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to custom URL.</source>
       </trans-unit>
       <trans-unit id="tl_calendar_events.jumpTo.0">
         <source>Redirect page</source>
