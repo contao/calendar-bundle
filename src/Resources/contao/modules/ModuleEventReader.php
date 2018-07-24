@@ -10,7 +10,9 @@
 
 namespace Contao;
 
+use Contao\CoreBundle\Exception\InternalServerErrorException;
 use Contao\CoreBundle\Exception\PageNotFoundException;
+use FOS\HttpCache\ResponseTagger;
 use Patchwork\Utf8;
 
 /**
@@ -59,15 +61,9 @@ class ModuleEventReader extends Events
 			\Input::setGet('events', \Input::get('auto_item'));
 		}
 
-		// Do not index or cache the page if no event has been specified
+		// Return empty module if events is not set (to combine list and reader on same page)
 		if (!\Input::get('events'))
 		{
-			/** @var PageModel $objPage */
-			global $objPage;
-
-			$objPage->noSearch = 1;
-			$objPage->cache = 0;
-
 			return '';
 		}
 
@@ -76,13 +72,7 @@ class ModuleEventReader extends Events
 		// Do not index or cache the page if there are no calendars
 		if (empty($this->cal_calendar) || !\is_array($this->cal_calendar))
 		{
-			/** @var PageModel $objPage */
-			global $objPage;
-
-			$objPage->noSearch = 1;
-			$objPage->cache = 0;
-
-			return '';
+			throw new InternalServerErrorException(sprintf('The event reader with id "%s" has no calendars specified.', $this->id));
 		}
 
 		return parent::generate();
@@ -202,6 +192,15 @@ class ModuleEventReader extends Events
 		$objTemplate->details = '';
 		$objTemplate->hasDetails = false;
 		$objTemplate->hasTeaser = false;
+
+		// Tag the response
+		if (System::getContainer()->has('fos_http_cache.http.symfony_response_tagger'))
+		{
+			/** @var ResponseTagger $responseTagger */
+			$responseTagger = System::getContainer()->get('fos_http_cache.http.symfony_response_tagger');
+			$responseTagger->addTags(array('contao.db.tl_calendar_events.' . $objEvent->id));
+			$responseTagger->addTags(array('contao.db.tl_calendar.' . $objEvent->pid));
+		}
 
 		// Clean the RTE output
 		if ($objEvent->teaser != '')
