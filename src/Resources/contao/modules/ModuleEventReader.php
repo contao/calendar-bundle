@@ -61,7 +61,7 @@ class ModuleEventReader extends Events
 			\Input::setGet('events', \Input::get('auto_item'));
 		}
 
-		// Return empty module if events is not set (to combine list and reader on same page)
+		// Return an empty string if "events" is not set (to combine list and reader on same page)
 		if (!\Input::get('events'))
 		{
 			return '';
@@ -69,10 +69,9 @@ class ModuleEventReader extends Events
 
 		$this->cal_calendar = $this->sortOutProtected(\StringUtil::deserialize($this->cal_calendar));
 
-		// Do not index or cache the page if there are no calendars
 		if (empty($this->cal_calendar) || !\is_array($this->cal_calendar))
 		{
-			throw new InternalServerErrorException(sprintf('The event reader with id "%s" has no calendars specified.', $this->id));
+			throw new InternalServerErrorException('The event reader ID ' . $this->id . ' has no calendars specified.', $this->id);
 		}
 
 		return parent::generate();
