@@ -1,185 +1,185 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="src/Resources/contao/languages/en/tl_calendar.php" source-language="en" target-language="es">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_calendar.php" source-language="en" target-language="da">
     <body>
       <trans-unit id="tl_calendar.title.0">
         <source>Title</source>
-        <target>Título</target>
+        <target>Overskrift</target>
       </trans-unit>
       <trans-unit id="tl_calendar.title.1">
         <source>Please enter the calendar title.</source>
-        <target>Introduzca un título para el calendario.</target>
+        <target>Giv kalenderen en titel.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.jumpTo.0">
         <source>Redirect page</source>
-        <target>Saltar a la página</target>
+        <target>Hop til side</target>
       </trans-unit>
       <trans-unit id="tl_calendar.jumpTo.1">
         <source>Please choose the event reader page to which visitors will be redirected when clicking an event.</source>
-        <target>Seleccione la página a la que serán redirigidos los visitantes cuando hagan clic sobre un evento.</target>
+        <target>Vælg en side som besøgende skal omdirigeres til når de klikker på en begivenhed.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.allowComments.0">
         <source>Enable comments</source>
-        <target>Habilitar comentarios</target>
+        <target>Slå kommentarer til</target>
       </trans-unit>
       <trans-unit id="tl_calendar.allowComments.1">
         <source>Allow visitors to comment events.</source>
-        <target>Permitir a los visitantes añadir comentarios a los eventos.</target>
+        <target>Tillad besøgende at kommentere begivenheder.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify.0">
         <source>Notify</source>
-        <target>Notificación</target>
+        <target>Giv besked</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify.1">
         <source>Please choose who to notify when comments are added.</source>
-        <target>Seleccione a quién se debe notificar cuando se agreguen comentarios.</target>
+        <target>Vælg venligst hvem der skal have besked ved nye kommentarer</target>
       </trans-unit>
       <trans-unit id="tl_calendar.sortOrder.0">
         <source>Sort order</source>
-        <target>Ordenamiento</target>
+        <target>Rækkefølge</target>
       </trans-unit>
       <trans-unit id="tl_calendar.sortOrder.1">
         <source>By default, comments are sorted ascending, starting with the oldest one.</source>
-        <target>De manera preestablecida los comentarios se ordenan de manera ascendente, comenzando por el más antiguo.</target>
+        <target>Som standard sorteres kommentarer stigende, startende med den ældste</target>
       </trans-unit>
       <trans-unit id="tl_calendar.perPage.0">
         <source>Comments per page</source>
-        <target>Comentarios por página</target>
+        <target>Kommentarer pr. side</target>
       </trans-unit>
       <trans-unit id="tl_calendar.perPage.1">
         <source>Number of comments per page. Set to 0 to disable pagination.</source>
-        <target>Cantidad de comentarios por página. Introduzca 0 para deshabilitar la paginación.</target>
+        <target>Antal kommentarer på side. Sæt til 0 for at vise alle på én side.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.moderate.0">
         <source>Moderate comments</source>
-        <target>Moderación</target>
+        <target>Godkend kommentarer</target>
       </trans-unit>
       <trans-unit id="tl_calendar.moderate.1">
         <source>Approve comments before they are published on the website.</source>
-        <target>Permite aprobar los comentarios antes de que sean publicados en el sitio.</target>
+        <target>Godkend kommentarer inden de vises på siden.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.bbcode.0">
         <source>Allow BBCode</source>
-        <target>Permitir BBCode</target>
+        <target>Tillad BBCode</target>
       </trans-unit>
       <trans-unit id="tl_calendar.bbcode.1">
         <source>Allow visitors to format their comments with BBCode.</source>
-        <target>Permitir a los visitantes aplicar formato utilizando BBCode.</target>
+        <target>Tillad besøgende at formattere kommentarer med BBCode.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.requireLogin.0">
         <source>Require login to comment</source>
-        <target>Requerir identificación para comentar</target>
+        <target>Login kræves for at kommentere</target>
       </trans-unit>
       <trans-unit id="tl_calendar.requireLogin.1">
         <source>Allow only authenticated users to create comments.</source>
-        <target>Sólo los usuarios que hayan iniciado la sesión pueden crear comentarios.</target>
+        <target>Tillad kun kommentarer fra brugere der er logget ind.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.disableCaptcha.0">
         <source>Disable the security question</source>
-        <target>Deshabilitar pregunta de seguridad</target>
+        <target>Slå sikkerhedsspørgsmål fra</target>
       </trans-unit>
       <trans-unit id="tl_calendar.disableCaptcha.1">
         <source>Use this option only if you have limited comments to authenticated users.</source>
-        <target>Utilice esta opción únicamente si ha limitado la creación de comentarios a los usuarios identificados.</target>
+        <target>Vælg kun dette hvis du har begrænset kommentarer til brugere der er logget ind.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected.0">
         <source>Protect calendar</source>
-        <target>Proteger calendario</target>
+        <target>Beskyt kalender</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected.1">
         <source>Show events to certain member groups only.</source>
-        <target>Mostrar eventos solo a ciertos miembros de grupos.</target>
+        <target>Vis kun begivenheder til bestemt medlemsgrupper.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.groups.0">
         <source>Allowed member groups</source>
-        <target>Miembros de grupos permitidos</target>
+        <target>Tilladte medlemsgrupper</target>
       </trans-unit>
       <trans-unit id="tl_calendar.groups.1">
         <source>These groups will be able to see the events in this calendar.</source>
-        <target>Estos grupos podrán ver los eventos de este calendario.</target>
+        <target>Her kan du vælge hvilke grupper der har tilladelse til at se begivenhederne.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.tstamp.0">
         <source>Revision date</source>
-        <target>Fecha revisión</target>
+        <target>Revideringsdato</target>
       </trans-unit>
       <trans-unit id="tl_calendar.tstamp.1">
         <source>Date and time of the latest revision</source>
-        <target>Fecha y hora de la última modificación</target>
+        <target>Dato og tid for sidste revidering.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.title_legend">
         <source>Title and redirect page</source>
-        <target>Título y página de redirección</target>
+        <target>Titel og hop til side</target>
       </trans-unit>
       <trans-unit id="tl_calendar.comments_legend">
         <source>Comments</source>
-        <target>Comentarios</target>
+        <target>Kommentar</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected_legend">
         <source>Access protection</source>
-        <target>Acceso protegido</target>
+        <target>Adgangsbeskyttelse</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feed_legend">
         <source>RSS/Atom feed</source>
-        <target>RSS/Atom feed</target>
+        <target>Nyhedsstrøm</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_admin">
         <source>System administrator</source>
-        <target>Administrador del sistema</target>
+        <target>Systemadministrator</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_author">
         <source>Author of the event</source>
-        <target>Autor del evento</target>
+        <target>Forfatter af begivenheden</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_both">
         <source>Author and system administrator</source>
-        <target>Autor y administrador del sistema</target>
+        <target>Forfatter og systemadministrator</target>
       </trans-unit>
       <trans-unit id="tl_calendar.source_teaser">
         <source>Event teasers</source>
-        <target>Avances de eventos</target>
+        <target>Begivenheds-appetitvækker</target>
       </trans-unit>
       <trans-unit id="tl_calendar.source_text">
         <source>Full articles</source>
-        <target>Noticias completas</target>
+        <target>Artikler</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feeds.0">
         <source>RSS feeds</source>
-        <target>feeds RSS</target>
+        <target>RSS feeds</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feeds.1">
         <source>Manage RSS feeds</source>
-        <target>Administrar feeds RSS</target>
+        <target>Håndter RSS feeds</target>
       </trans-unit>
       <trans-unit id="tl_calendar.new.0">
         <source>New</source>
-        <target>Nuevo</target>
+        <target>Ny</target>
       </trans-unit>
       <trans-unit id="tl_calendar.new.1">
         <source>Create a new calendar</source>
-        <target>Crear un calendario nuevo</target>
+        <target>Opret en ny kalender</target>
       </trans-unit>
       <trans-unit id="tl_calendar.show">
         <source>Show the details of calendar ID %s</source>
-        <target>Mostrar detalles del calendario con ID %s</target>
+        <target>Vis detaljer for kalender-ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.edit">
         <source>Edit calendar ID %s</source>
-        <target>Editar calendario con ID %s</target>
+        <target>Rediger kalender-ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.editmeta">
         <source>Edit the calendar settings</source>
-        <target>Editar el calendario actual</target>
+        <target>Rediger den valgte kalender</target>
       </trans-unit>
       <trans-unit id="tl_calendar.editheader">
         <source>Edit the settings of calendar ID %s</source>
-        <target>Editar ajustes del calendario con ID %s</target>
+        <target>Rediger indstillingerne af kalender-ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.copy">
         <source>Duplicate calendar ID %s</source>
-        <target>Duplicar calendario con ID %s</target>
+        <target>Duplikér kalender-ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.delete">
         <source>Delete calendar ID %s</source>
-        <target>Eliminar calendario con ID %s</target>
+        <target>Slet kalender-ID %s</target>
       </trans-unit>
     </body>
   </file>
