@@ -1,245 +1,240 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="contao/languages/languages/en/tl_module.php" source-language="en" target-language="pl">
+  <file datatype="php" original="contao/languages/languages/en/tl_module.php" source-language="en" target-language="sl">
     <body>
       <trans-unit id="tl_module.cal_calendar.0">
         <source>Calendars</source>
-        <target>Kalendarze</target>
+        <target>Koledarji</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_calendar.1">
         <source>Please select one or more calendars.</source>
-        <target>Wybierz kalendarz.</target>
+        <target>Izberite enaga ali več koledarjev.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_noSpan.0">
         <source>Shortened view</source>
-        <target>Skrócony widok</target>
+        <target>Skrajšan pogled</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_noSpan.1">
         <source>Show events only once even if they span multiple days.</source>
-        <target>Pokaż wydarzenia tylko raz, nawet jeśli są to wydarzenia wielodniowe.</target>
+        <target>Prikaže dogodke samo enkrat, tudi če se raztezajo čez več dni.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_hideRunning.0">
         <source>Hide running events</source>
-        <target>Ukryj trwające wydarzenia</target>
+        <target>Skrij dogodke v teku</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_hideRunning.1">
         <source>Do not show running events in the list of upcoming events.</source>
-        <target>Ukryj trwające wydarzenia w liście nadchodzących wydarzeń.</target>
+        <target>V seznamu prihodnjih dogodkov ne prikaži dogodkov v teku.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_startDay.0">
         <source>Week start day</source>
-        <target>Dzień rozpoczynający tydzień</target>
+        <target>Prvi dan v tednu</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_startDay.1">
         <source>Here you can choose the week start day.</source>
-        <target>Tu możesz wybrać dzień rozpoczynający tydzień.</target>
+        <target>Tukaj lahko izberete kateri je prvi dan v tednu.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_format.0">
         <source>Event list format</source>
-        <target>Format listy wydarzeń</target>
+        <target>Oblika seznama dogodkov</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_format.1">
         <source>Here you can choose the event list format.</source>
-        <target>Wybierz format listy wydarzeń</target>
+        <target>Izberite obliko seznama dogodkov.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_ignoreDynamic.0">
         <source>Ignore URL parameters</source>
-        <target>Ignoruj parametry URL</target>
+        <target>Ignoriraj URL parametre</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_ignoreDynamic.1">
         <source>Do not switch the time period based on the date/month/year URL parameters.</source>
-        <target>Nie zmieniaj przedziału czasu na podstawie parametrów URL date/month/year.</target>
+        <target>Ne vklapljajte časovnega obdobja, ki temelji na datum/mesec/leto URL parametrih.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_order.0">
         <source>Sort order</source>
-        <target>Kolejność sortowania</target>
+        <target>Vrstni red</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_order.1">
         <source>Here you can choose the sort order.</source>
-        <target>Tutaj możesz wybrać kolejność sortowania.</target>
+        <target>Tu lahko izberete vrstni red.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_readerModule.0">
         <source>Event reader module</source>
-        <target>Moduł czytnika wydarzeń</target>
+        <target>Modul bralnik dogodkov</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_readerModule.1">
         <source>Automatically switch to the event reader if an event has been selected.</source>
-        <target>Automatycznie przełącz do czytnika wydarzeń, jeśli zostało wybrane jakieś wydarzenie.</target>
+        <target>V kolikor je izbran dogodek, samodejno preklopi na bralnik dogodkov.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_limit.0">
         <source>Number of events</source>
-        <target>Ilość wydarzeń</target>
+        <target>Število dogodkov</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_limit.1">
         <source>Here you can limit the number of events. Enter 0 to show all.</source>
-        <target>Tu możesz ustalić ilość wydarzeń. Jeśli wpiszesz 0, zostaną pokazane wszystkie wydarzenia.</target>
+        <target>Vnesite največje število dogodkov (0=prikaži vse dogodke).</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_template.0">
         <source>Event template</source>
-        <target>Szablon wydarzeń</target>
+        <target>Predloga dogodkov</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_template.1">
         <source>Here you can select an event template.</source>
-        <target>Wybierz szablon wydarzeń. Możesz dodać własne szablony wydarzeń do katalogu &lt;em&gt;templates&lt;/em&gt;. Pliki szablonów wydarzeń muszą zaczynać się od &lt;em&gt;event_&lt;/em&gt; i muszą mieć rozszerzenie &lt;em&gt;.html5&lt;/em&gt;.</target>
+        <target>Tu lahko določite predlogo za dogodek</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_ctemplate.0">
         <source>Calendar template</source>
-        <target>Szablon kalendarza</target>
+        <target>Predloga koledarja</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_ctemplate.1">
         <source>Here you can select a calendar template.</source>
-        <target>Tutaj możesz wybrać szablon kalendarza.</target>
+        <target>Tu lahko določite predlogo za koledar</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_showQuantity.0">
         <source>Show number of events</source>
-        <target>Pokaż ilość wydarzeń</target>
+        <target>Prikaži število dogodkov</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_showQuantity.1">
         <source>Show the number of events of each month in the menu.</source>
-        <target>Pokaż ilość wydarzeń dla każdego miesiąca w menu.</target>
+        <target>Prikaži število dogodkov za vsak mesec v meniju.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_featured.0">
         <source>Featured events</source>
-        <target>Promowane wydarzenia</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_featured.1">
         <source>Here you can choose how featured events are handled.</source>
-        <target>Tutaj możesz wybrać jak obsługiwane są promowane wydarzenia.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_list">
         <source>Event list</source>
-        <target>Lista wydarzeń</target>
+        <target>Seznam dogodkov</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_day">
         <source>Day</source>
-        <target>Dzień</target>
+        <target>Dan</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_month">
         <source>Month</source>
-        <target>Miesiąc</target>
+        <target>Mesec</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_year">
         <source>Year</source>
-        <target>Rok</target>
+        <target>Leto</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_all">
         <source>All events</source>
-        <target>Wszystkie wydarzenia</target>
+        <target>Vsi dogodki</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_upcoming">
         <source>Upcoming events</source>
-        <target>Nadchodzące wydarzenia</target>
+        <target>Bližnji dogodki</target>
       </trans-unit>
       <trans-unit id="tl_module.next_7">
         <source>+ 1 week</source>
-        <target>+ 1 tydzień</target>
+        <target>+ 1 teden</target>
       </trans-unit>
       <trans-unit id="tl_module.next_14">
         <source>+ 2 weeks</source>
-        <target>+ 2 tygodnie</target>
+        <target>+ 2 tedna</target>
       </trans-unit>
       <trans-unit id="tl_module.next_30">
         <source>+ 1 month</source>
-        <target>+ 1 miesiąc</target>
+        <target>+ 1 mesec</target>
       </trans-unit>
       <trans-unit id="tl_module.next_90">
         <source>+ 3 months</source>
-        <target>+ 3 miesiące</target>
+        <target>+ 3 mesece</target>
       </trans-unit>
       <trans-unit id="tl_module.next_180">
         <source>+ 6 months</source>
-        <target>+ 6 miesięcy</target>
+        <target>+ 6 mesecev</target>
       </trans-unit>
       <trans-unit id="tl_module.next_365">
         <source>+ 1 year</source>
-        <target>+ 1 rok</target>
+        <target>+ 1 leto</target>
       </trans-unit>
       <trans-unit id="tl_module.next_two">
         <source>+ 2 years</source>
-        <target>+ 2 lata</target>
+        <target>+ 2 leti</target>
       </trans-unit>
       <trans-unit id="tl_module.next_cur_month">
         <source>of the current month</source>
-        <target>obecnego miesiąca</target>
+        <target>v trenutnem mesecu</target>
       </trans-unit>
       <trans-unit id="tl_module.next_cur_year">
         <source>of the current year</source>
-        <target>obecnego roku</target>
+        <target>v letošnjem letu</target>
       </trans-unit>
       <trans-unit id="tl_module.next_next_month">
         <source>of the next month</source>
-        <target>następnego miesiąca</target>
+        <target>v naslednjem mesecu</target>
       </trans-unit>
       <trans-unit id="tl_module.next_next_year">
         <source>of the next year</source>
-        <target>następnego roku</target>
+        <target>v naslednjem letu</target>
       </trans-unit>
       <trans-unit id="tl_module.next_all">
         <source>All upcoming events</source>
-        <target>Wszystkie nadchodzące wydarzenia</target>
+        <target>Vsi bližnji dogodki</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_past">
         <source>Past events</source>
-        <target>Przeszłe wydarzenia</target>
+        <target>Pretekli dogodki</target>
       </trans-unit>
       <trans-unit id="tl_module.past_7">
         <source>- 1 week</source>
-        <target>- 1 tydzień</target>
+        <target>- 1 teden</target>
       </trans-unit>
       <trans-unit id="tl_module.past_14">
         <source>- 2 weeks</source>
-        <target>- 2 tygodnie</target>
+        <target>- 2 tedna</target>
       </trans-unit>
       <trans-unit id="tl_module.past_30">
         <source>- 1 month</source>
-        <target>- 1 miesiąc</target>
+        <target>- 1 mesec</target>
       </trans-unit>
       <trans-unit id="tl_module.past_90">
         <source>- 3 months</source>
-        <target>- 3 miesiące</target>
+        <target>- 3 mesece</target>
       </trans-unit>
       <trans-unit id="tl_module.past_180">
         <source>- 6 months</source>
-        <target>- 6 miesięcy</target>
+        <target>- 6 mesecev</target>
       </trans-unit>
       <trans-unit id="tl_module.past_365">
         <source>- 1 year</source>
-        <target>- 1 rok</target>
+        <target>- 1 leto</target>
       </trans-unit>
       <trans-unit id="tl_module.past_two">
         <source>- 2 years</source>
-        <target>- 2 lata</target>
+        <target>- 2 leti</target>
       </trans-unit>
       <trans-unit id="tl_module.past_cur_month">
         <source>of the current month</source>
-        <target>obecnego miesiąca</target>
+        <target>v trenutnem mesecu</target>
       </trans-unit>
       <trans-unit id="tl_module.past_cur_year">
         <source>of the current year</source>
-        <target>obecnego roku</target>
+        <target>v letošnjem letu</target>
       </trans-unit>
       <trans-unit id="tl_module.past_prev_month">
         <source>of the previous month</source>
-        <target>poprzedniego miesiąca</target>
+        <target>v prejšnjem mesecu</target>
       </trans-unit>
       <trans-unit id="tl_module.past_prev_year">
         <source>of the previous year</source>
-        <target>obecnego roku</target>
+        <target>v lanskem letu</target>
       </trans-unit>
       <trans-unit id="tl_module.past_all">
         <source>All past events</source>
-        <target>Wszystkie przeszłe wydarzenia</target>
+        <target>Vsi pretekli dogodki</target>
       </trans-unit>
       <trans-unit id="tl_module.events.all_items">
         <source>Show all events</source>
-        <target>Pokaż wszystkie wydarzenia</target>
       </trans-unit>
       <trans-unit id="tl_module.events.featured">
         <source>Show featured events only</source>
-        <target>Pokaż tylko promowane wydarzenia</target>
       </trans-unit>
       <trans-unit id="tl_module.events.unfeatured">
         <source>Skip featured events</source>
-        <target>Pomiń promowane wydarzenia</target>
       </trans-unit>
     </body>
   </file>
