@@ -1,397 +1,396 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="src/Resources/contao/languages/en/tl_calendar_events.php" source-language="en" target-language="lv">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_calendar_events.php" source-language="en" target-language="tr">
     <body>
       <trans-unit id="tl_calendar_events.title.0">
         <source>Title</source>
-        <target>Virsraksts</target>
+        <target>Başlık</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.title.1">
         <source>Please enter the event title.</source>
-        <target>Lūdzu ievadiet notikuma nosaukumu.</target>
+        <target>Lütfen etkinlik başlığını yazın.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.alias.0">
         <source>Event alias</source>
-        <target>Notikuma aizstājvārds</target>
+        <target>Etkinlik kısaltması</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.alias.1">
         <source>The event alias is a unique reference to the event which can be called instead of its numeric ID.</source>
-        <target>Notikuma aizstājvārds ir unikāla atsauce, ko var izsaukt notikuma ID vietā.</target>
+        <target>Etkinlik kısaltması etkinliğin sayısal kimliği olarak kullanılacak eşsiz bir belirteçtir.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.author.0">
         <source>Author</source>
-        <target>Vārds</target>
+        <target>Yazar</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.author.1">
         <source>Here you can change the author of the event.</source>
-        <target>Šeit jūs varat mainīt notikuma autoru.</target>
+        <target>Buradan etkinliğini yazarını değiştirilebilir.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.addTime.0">
         <source>Add time</source>
-        <target>Pievienot laikus</target>
+        <target>Zaman ekle</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.addTime.1">
         <source>Add a start and end time to the event.</source>
-        <target>Pievieno notikuma sākuma un beigu laikus</target>
+        <target>Etkinliğe başlangıç ve bitme zamanı ekleyin</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.startTime.0">
         <source>Start time</source>
-        <target>Sākuma laiks</target>
+        <target>Başlangıç zamanı</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.startTime.1">
         <source>Please enter the start time according to the global time format.</source>
-        <target>Lūdzu, ievadiet sākuma laiku saskaņā ar globālo laika formātu.</target>
+        <target>Lütfen başlangıç zamanını Küresel Zaman Biçimine uygun ekleyiniz</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.endTime.0">
         <source>End time</source>
-        <target>Beigu laiks</target>
+        <target>Bitiş zamanı</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.endTime.1">
         <source>Leave blank to create an open-ended event.</source>
-        <target>Atstājiet tukšu, lai izveidotu beztermiņa notikumu.</target>
+        <target>Bitişi açık olan bir etkinlik için boş bırak.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.startDate.0">
         <source>Start date</source>
-        <target>Sākuma datums</target>
+        <target>Başlangıç tarihi</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.startDate.1">
         <source>Please enter the start date according to the global date format.</source>
-        <target>Lūdzu ievadiet notikuma sākuma datumu.</target>
+        <target>Lütfen başlangıç tarihini Ulusal Zaman Ölçümüne uygun girin</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.endDate.0">
         <source>End date</source>
-        <target>Beigu datums</target>
+        <target>Bitiş tarihi</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.endDate.1">
         <source>Leave blank to create a single day event.</source>
-        <target>Lūdzu ievadiet notikuma beigu datumu vai atstājiet tukšu vienas dienas notikumam.</target>
+        <target>Tek günlük etkinlik oluşturmak için boş bırakın.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.pageTitle.0">
         <source>Meta title</source>
-        <target>Meta nosaukums</target>
+        <target>Meta başlığı</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.pageTitle.1">
         <source>Here you can add a custom meta title to overwrite the default page title.</source>
-        <target>Šeit jūs varat pievienot pielāgotu meta nosaukumu, lai pārrakstītu noklusējuma lapas nosaukumu.</target>
+        <target>Buraya, varsayılan sayfa başlığını etkisiz kılıp özel bir meta başlık girebilirsiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.robots.0">
         <source>Robots tag</source>
-        <target>Robotu birkas</target>
+        <target>Robotlar etiketi</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.robots.1">
         <source>Here you can overwrite how search engines handle the event.</source>
-        <target>Šeit jūs varat pārrakstīt, kā meklētājprogrammas apstrādā notikumu.</target>
+        <target>Buradan arama motorlarının etkinliği nasıl ele aldığını üzerine yazabilirsiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.description.0">
         <source>Meta description</source>
-        <target>Meta apraksts</target>
+        <target>Meta Açıklaması</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.description.1">
         <source>Here you can add a custom meta description to overwrite the default page description.</source>
-        <target>Šeit jūs varat pievienot pielāgotu meta aprakstu, lai pārrakstītu noklusējuma lapas aprakstu.</target>
+        <target>Buraya, varsayılan sayfa açıklamasını etkisiz kılıp özel bir meta açıklama girebilirsiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.0">
         <source>Location name</source>
-        <target>Vietas nosaukums</target>
+        <target>Yer adı</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.location.1">
         <source>Here you can enter the name of the event location.</source>
-        <target>Šeit jūs varat ievadīt notikuma vietas nosaukumu.</target>
+        <target>Buraya etkinliğin gerçekleşeceği yerin adını girebilirsiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.address.0">
         <source>Location address</source>
-        <target>Vietas adrese</target>
+        <target>Yer adresi</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.address.1">
         <source>Here you can enter the address of the event location.</source>
-        <target>Šeit jūs varat ievadīt notikuma vietas adresi.</target>
+        <target>Buraya etkinliğin gerçekleşeceği yerin adresini girebilirsiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.teaser.0">
         <source>Event teaser</source>
-        <target>Notikuma ievads</target>
+        <target>Etkinlik ön tanıtımı</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.teaser.1">
         <source>The event teaser can be shown in an event list instead of the full article. A &quot;read more …&quot; link will be added automatically.</source>
-        <target>Ievads parasti tiek rādīts notikumu sarakstā pilna raksta vietā. Saite &quot;Turpināt lasīt...&quot; tiks pievienota automātiski.</target>
+        <target>Etkinlik listesinde etkinlik teaseri tüm makalenin yerine gösterilir. &quot;Devam oku ...&quot; bağlantısı otomatik olarak eklenir.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.details.0">
         <source>Event text</source>
-        <target>Notikuma detaļas</target>
+        <target>Etkinlik metni</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.details.1">
         <source>Here you can enter the event text.</source>
-        <target>Šeit jūs varat ievadīt notikuma tekstu.</target>
+        <target>Buraya etkinlik metnini girebilirsiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.addImage.0">
         <source>Add an image</source>
-        <target>Pievienot attēlu</target>
+        <target>Resim ekleyin</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.addImage.1">
         <source>Add an image to the event.</source>
-        <target>Pievienot attēlu notikumam.</target>
+        <target>Etkinliğe bir resim ekleyin.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.recurring.0">
         <source>Repeat event</source>
-        <target>Notikuma atkārtošana</target>
+        <target>Etkinliği tekrarla</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.recurring.1">
         <source>Create a recurring event.</source>
-        <target>Atkārtot aktuālo notikumu.</target>
+        <target>Tekrarlanan etkinlik oluştur</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.repeatEach.0">
         <source>Interval</source>
-        <target>Intervāls</target>
+        <target>Aralık</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.repeatEach.1">
         <source>Here you can set the recurrence interval.</source>
-        <target>Lūdzu uzstādiet laika intervālu.</target>
+        <target>Buradan tekrarlanma aralığını düzenleye bilirsiniz</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.recurrences.0">
         <source>Recurrences</source>
-        <target>Atkārtošanas</target>
+        <target>Tekrarlama</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.recurrences.1">
         <source>Set to 0 for unlimited recurrences.</source>
-        <target>Lūdzu uzstādiet atkārtošanu skaitu (0=neierobežots)</target>
+        <target>Sınırsız yinelemeler için 0 yaz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.repeatEnd">
         <source>End of recurring event</source>
-        <target>Atkārtota notikuma beigas</target>
+        <target>Tekrarlanan etkinliğin sonu</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.addEnclosure.0">
         <source>Add enclosures</source>
-        <target>Pievienot pievienojumus</target>
+        <target>Dosya ekle</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.addEnclosure.1">
         <source>Add one or more downloadable files to the event.</source>
-        <target>Pievienojiet notikumam vienu vai vairākas lejupielādējamas datnes.</target>
+        <target>Etkinliğe bir veya birden fazla indirilebilir dosya ekle.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.enclosure.0">
         <source>Enclosures</source>
-        <target>Pievienojumi</target>
+        <target>Dosyalar</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.enclosure.1">
         <source>Please choose the files you want to attach.</source>
-        <target>Lūdzu izvēlieties datnes ko vēlaties pievienot.</target>
+        <target>Eklemek istediğiniz dosyaları seçiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.source.0">
         <source>Redirect target</source>
-        <target>Novirzīšanas mērķis</target>
+        <target>Yönlendirme hedefi</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.source.1">
         <source>Here you can override the default redirect target.</source>
-        <target>Šeit jūs varat aizstāt noklusējuma novirzīšanas mērķi ar iekšēju vai ārēju lapu.</target>
+        <target>Varsayılan yönlendirme hedefini buradan geçersiz kılabilirsiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.default.0">
         <source>Use default</source>
-        <target>Lietot noklusējuma</target>
+        <target>Varsayılanı kullan</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.default.1">
         <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to the default page of the calendar.</source>
-        <target>Noklikšķinot &quot;Lasīt tālāk...&quot; pogas, apmeklētāji tiks novirzīti uz kalendāra noklusējuma lapu.</target>
+        <target>&quot;daha fazla oku&quot; klasörüne tıklayarak ziyaretçiler takvimin varsayılan sayfasına yönlendirilecekler</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.internal.0">
         <source>Page</source>
-        <target>Iekšēja lapa</target>
+        <target>Sayfa</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.internal.1">
         <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to an internal page.</source>
-        <target>Noklikšķinot &quot;Lasīt tālāk...&quot; pogas, apmeklētāji tiks novirzīti uz iekšeju lapu.</target>
+        <target>&quot;daha fazla oku&quot; klasörüne tıklayarak ziyaretçiler dahili sayfaya yönlendirilecekler</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.article.0">
         <source>Article</source>
-        <target>Raksta ID</target>
+        <target>Makale</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.article.1">
         <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to an article.</source>
-        <target>Uzklikšķinot uz &quot;Lasīt vairāk ...&quot; pogas, apmeklētāji tiks novirzīti uz rakstu.</target>
+        <target>Ziyaretçiler &quot;Devamını oku&quot; butonuna tıklayarak makaleye yönlendirileceklerdir.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.0">
         <source>Custom URL</source>
-        <target>Pielāgots URL</target>
+        <target>Özel URL</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.external.1">
         <source>By clicking the &quot;read more …&quot; button, visitors will be redirected to custom URL.</source>
-        <target>Uzklikšķinot uz &quot;lasīt vairāk ...&quot; pogas, apmeklētāji tiks novirzīti uz pielāgotu URL.</target>
+        <target>Ziyaretçiler &quot;Devamını oku ...&quot; butonuna tıklayarak, başka bir sayfaya yönlendirileceklerdir.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.jumpTo.0">
         <source>Redirect page</source>
-        <target>Pārsūtīšanas lapa</target>
+        <target>Yönlendirme sayfası</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.jumpTo.1">
         <source>Please choose the page to which visitors will be redirected when clicking the event.</source>
-        <target>Lūdzu izvēlieties lapu uz kuru apmeklētāji tiks novirzīti, kad noklikšķinās notikumu.</target>
+        <target>Lütfen ziyaretçilerin etkinliğe tıkladığında yönlendirilecekleri sayfayı seçin.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.articleId.0">
         <source>Article</source>
-        <target>Raksta ID</target>
+        <target>Makale</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.articleId.1">
         <source>Please choose the article to which visitors will be redirected when clicking the event.</source>
-        <target>Lūdzu, izvēlieties rakstu, uz kuru apmeklētāji tiks novirzīti, kad noklikšķinās notikumu.</target>
+        <target>Lütfen ziyaretçilerin etkinliğe tıkladığında yönlendirilecekleri makaleyi seçin.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.cssClass.0">
         <source>CSS class</source>
-        <target>CSS klase</target>
+        <target>CSS sınıfı</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.cssClass.1">
         <source>Here you can enter one or more classes.</source>
-        <target>Šeit jūs varat ievadīt vienu vai vairākas klases.</target>
+        <target>Buraya bir veya birden fazla sınıf ekleyebilirsiniz.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.noComments.0">
         <source>Disable comments</source>
-        <target>Atspējot komentārus</target>
+        <target>Yorumları kaldır</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.noComments.1">
         <source>Do not allow comments for this particular event.</source>
-        <target>Neļaut komentārus šim notikumam.</target>
+        <target>Bu etkinlikte yorumlara izin verme.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.featured.0">
         <source>Feature event</source>
-        <target>Zīmīgais notikums</target>
+        <target>Öne çıkan etkinlik</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.featured.1">
         <source>Show the event in a featured event list.</source>
-        <target>Rādīt notikumu iezīmēto notikumu sarakstā.</target>
+        <target>Etkinliği bir öne çıkan etkinlik listesinde gösterin.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.published.0">
         <source>Publish event</source>
-        <target>Publicēts</target>
+        <target>Etkinliği yayımla</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.published.1">
         <source>Make the event publicly visible on the website.</source>
-        <target>Padarīt notikumu publiski redzamu mājas lapā.</target>
+        <target>Etkinliği sitede herkes icin görünür yap.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.start.0">
         <source>Show from</source>
-        <target>Rādīt no</target>
+        <target>İtibaren göster</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.start.1">
         <source>If you want to prevent the event from showing on the website before a certain date/time, you can enter it here. Otherwise leave the field blank.</source>
-        <target>Ja nevēlaties ļaut notikumam parādīties vietnē pirms noteikta datuma / laika, varat to ievadīt šeit. Pretējā gadījumā atstājiet lauku tukšu.</target>
+        <target>Eğer etkinliğin belirli bir tarih/saatten önce sitede görünmesini engellemek isterseniz buradan girebilirsiniz. Aksi halde, alanı boş bırakın.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.stop.0">
         <source>Show until</source>
-        <target>Rādīt līdz</target>
+        <target>Kadar göster</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.stop.1">
         <source>If you want to prevent the event from showing on the website after a certain date/time, you can enter it here. Otherwise leave the field blank.</source>
-        <target>Ja nevēlaties ļaut notikumam parādīties vietnē pēc noteikta datuma / laika, varat to ievadīt šeit. Pretējā gadījumā atstājiet lauku tukšu.</target>
+        <target>Eğer etkinliğin belirli bir tarih/saatten sonra sitede görünmesini engellemek isterseniz buradan girebilirsiniz. Aksi halde, alanı boş bırakın.</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.tstamp.0">
         <source>Revision date</source>
-        <target>Pārskatījuma datums</target>
+        <target>Düzenleme tarihi</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.tstamp.1">
         <source>Date and time of the latest revision</source>
-        <target>Pēdējā pārskatījuma datums un laiks</target>
+        <target>En son düzenlemenin tarihi ve saati</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.title_legend">
         <source>Title and author</source>
-        <target>Nosaukums un autors</target>
+        <target>Başlık ve yazar</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.date_legend">
         <source>Date and time</source>
-        <target>Datums un laiks</target>
+        <target>Tarih ve saat</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.details_legend">
         <source>Event details</source>
-        <target>Notikuma detaļas</target>
+        <target>Etkinlik ayrıntıları</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.text_legend">
         <source>Event text</source>
-        <target>Notikuma detaļas</target>
+        <target>Etkinlik metni</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.image_legend">
         <source>Image settings</source>
-        <target>Attēla iestatījumi</target>
+        <target>Resim ayarları</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.recurring_legend">
         <source>Recurrence settings</source>
-        <target>Periodiskuma iestatījumi</target>
+        <target>Tekrarlama ayarları</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.enclosure_legend">
         <source>Enclosures</source>
-        <target>Pievienojumi</target>
+        <target>Dosyalar</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.source_legend">
         <source>Redirect target</source>
-        <target>Novirzīšanas mērķis</target>
+        <target>Yönlendirme hedefi</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.meta_legend">
         <source>Metadata</source>
-        <target>Metadati</target>
+        <target>Meta veri</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.expert_legend">
         <source>Expert settings</source>
-        <target>Eksperta iestatījumi</target>
+        <target>Gelişmiş ayarlar</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.publish_legend">
         <source>Publish settings</source>
-        <target>Publicēšanas iestatījumi</target>
+        <target>Yayınlama ayarları</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.days">
         <source>day(s)</source>
-        <target>diena(s)</target>
+        <target>gün(ler)</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.weeks">
         <source>week(s)</source>
-        <target>nedēļa(s)</target>
+        <target>hafta(lar)</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.months">
         <source>month(s)</source>
-        <target>mēnesis(-ši)</target>
+        <target>ay(lar)</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.years">
         <source>year(s)</source>
-        <target>gads(i)</target>
+        <target>yıl(lar)</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.new.0">
         <source>New</source>
-        <target>Jauns</target>
+        <target>Yeni</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.new.1">
         <source>Create a new event</source>
-        <target>Izveidot jaunu notikumu</target>
+        <target>Yeni bir etkinlik oluştur</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.show">
         <source>Show the details of event ID %s</source>
-        <target>Rādīt notikuma ID %s detaļas</target>
+        <target>Etkinlik ID %s ayrıntılarını göster</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.edit">
         <source>Edit event ID %s</source>
-        <target>Rediģēt notikumu ID %s</target>
+        <target>Etkinlik ID %s düzenle</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.copy">
         <source>Duplicate event ID %s</source>
-        <target>Kopēt notikumu ID %s</target>
+        <target>Etkinlik ID %s çoğalt</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.cut">
         <source>Move event ID %s</source>
-        <target>Pārvietot notikumu ID %s</target>
+        <target>Etkinlik ID %s taşı</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.delete">
         <source>Delete event ID %s</source>
-        <target>Dzēst notikumu ID %s</target>
+        <target>Etkinlik ID %s sil</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.toggle">
         <source>Publish/unpublish event ID %s</source>
-        <target>Publicēt/slēpt notikumu ID %s</target>
+        <target>Etkinlik ID %s yayımla/yayımlama</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.feature">
         <source>Feature/unfeature event ID %s</source>
-        <target>Iezīmēt/neiezīmēt notikumu ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.editheader">
         <source>Edit the settings of event ID %s</source>
-        <target>Rediģēt notikuma ID %s iestatījumus</target>
+        <target>Etkinlik ayarlarını düzenle İD %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.pasteafter.0">
         <source>Paste into this calendar</source>
-        <target>Ielīmēt šajā kalendārā</target>
+        <target>Bu takvimin içine yapıştır</target>
       </trans-unit>
       <trans-unit id="tl_calendar_events.editmeta">
         <source>Edit the event settings</source>
-        <target>Rediģēt notikuma iestatījumus</target>
+        <target>Etkinliğin ayarlarını düzenle</target>
       </trans-unit>
     </body>
   </file>
