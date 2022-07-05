@@ -1,185 +1,185 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="src/Resources/contao/languages/en/tl_calendar.php" source-language="en" target-language="tr">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_calendar.php" source-language="en" target-language="ko">
     <body>
       <trans-unit id="tl_calendar.title.0">
         <source>Title</source>
-        <target>Başlık</target>
+        <target>제목</target>
       </trans-unit>
       <trans-unit id="tl_calendar.title.1">
         <source>Please enter the calendar title.</source>
-        <target>Lütfen takvim başlığını yazın.</target>
+        <target>달력의 제목을 입력하시오</target>
       </trans-unit>
       <trans-unit id="tl_calendar.jumpTo.0">
         <source>Redirect page</source>
-        <target>Yönlendirme sayfası</target>
+        <target>페이지 전달</target>
       </trans-unit>
       <trans-unit id="tl_calendar.jumpTo.1">
         <source>Please choose the event reader page to which visitors will be redirected when clicking an event.</source>
-        <target>Ziyaretçiler bir etkinliğe tıkladığında yönlendirilecekleri etkinlik okuyucu sayfasını seçin.</target>
+        <target>방문자가 이벤트를 클릭할 경우 전달될 이벤트 구독 페이지를 선택하시오</target>
       </trans-unit>
       <trans-unit id="tl_calendar.allowComments.0">
         <source>Enable comments</source>
-        <target>Yorum yapılabilsin</target>
+        <target>댓글 허용</target>
       </trans-unit>
       <trans-unit id="tl_calendar.allowComments.1">
         <source>Allow visitors to comment events.</source>
-        <target>Bu seçenek etkinleştirildiğinde, ziyaretçiler etkinliklere yorum yapabilir.</target>
+        <target>방문자의 이벤트에 대한 댓글 허용</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify.0">
         <source>Notify</source>
-        <target>Bildir</target>
+        <target>알림</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify.1">
         <source>Please choose who to notify when comments are added.</source>
-        <target>Lütfen yorum yapıldığında bildirim gönderilecek kişiyi seçin.</target>
+        <target>댓글이 추가되었을 경우 알릴 사람을 선택하시오</target>
       </trans-unit>
       <trans-unit id="tl_calendar.sortOrder.0">
         <source>Sort order</source>
-        <target>Sıralama</target>
+        <target>정렬하기</target>
       </trans-unit>
       <trans-unit id="tl_calendar.sortOrder.1">
         <source>By default, comments are sorted ascending, starting with the oldest one.</source>
-        <target>Yorumlar, varsayılan olarak eskiden yeniye doğru sıralanır.</target>
+        <target>기본적으로 댓글은 가장 오래된 댓글부터 오름차순으로 정렬됩니다.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.perPage.0">
         <source>Comments per page</source>
-        <target>Bir sayfadaki yorum sayısı</target>
+        <target>한 페이지 당 댓글 수</target>
       </trans-unit>
       <trans-unit id="tl_calendar.perPage.1">
         <source>Number of comments per page. Set to 0 to disable pagination.</source>
-        <target>Bir sayfada görüntülenecek yorum sayısını yazın. Sayfalandırmayı devre dışı bırakmak için 0 yazın.</target>
+        <target>페이지당 댓글 수입니다. 페이지 번호를 사용하지 않으려면 0으로 설정하세요.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.moderate.0">
         <source>Moderate comments</source>
-        <target>Yorumlar onaylansın</target>
+        <target>온건한 댓글</target>
       </trans-unit>
       <trans-unit id="tl_calendar.moderate.1">
         <source>Approve comments before they are published on the website.</source>
-        <target>Bu seçenek etkinleştirildiğinde, web sitesinde yayınlanmadan önce yorumların onaylanması gerekir.</target>
+        <target>댓글을 웹 사이트에 게시하기 전에 승인합니다.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.bbcode.0">
         <source>Allow BBCode</source>
-        <target>BBCode kullanılabilsin</target>
+        <target>BBCode 허용</target>
       </trans-unit>
       <trans-unit id="tl_calendar.bbcode.1">
         <source>Allow visitors to format their comments with BBCode.</source>
-        <target>Bu seçenek etkinleştirildiğinde, ziyaretçiler yorumlarında BBCode kullanabilir.</target>
+        <target>방문자가 BBCode로 의견을 형식화 할 수 있습니다.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.requireLogin.0">
         <source>Require login to comment</source>
-        <target>Oturum açmadan yorum yapılamasın</target>
+        <target>댓글을 달려면 로그인 필요</target>
       </trans-unit>
       <trans-unit id="tl_calendar.requireLogin.1">
         <source>Allow only authenticated members to create comments.</source>
-        <target>Bu seçenek etkinleştirildiğinde, yalnızca oturum açmış kullanıcılar yorum yapabilir.</target>
+        <target>인증된 구성원만 댓글을 달 수 있습니다.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.disableCaptcha.0">
         <source>Disable spam protection</source>
-        <target>Spam koruması devre dışı bırakılsın</target>
+        <target>스팸 보호 해제</target>
       </trans-unit>
       <trans-unit id="tl_calendar.disableCaptcha.1">
         <source>Use this option only if you have limited comments to authenticated users.</source>
-        <target>Bu seçeneği yalnızca oturum açmış kullanıcılar yorum yapabiliyorsa etkinleştirin.</target>
+        <target>인증된 사용자만 댓글을 달 수 있는 경우에만 이 옵션을 사용합니다.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected.0">
         <source>Protect calendar</source>
-        <target>Takvimi koru</target>
+        <target>달력 보호</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected.1">
         <source>Show events to certain member groups only.</source>
-        <target>Etkinlikler yalnızca belirli grup üyelerine görüntülensin.</target>
+        <target>특정 구성원 그룹에만 이벤트를 표시합니다.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.groups.0">
         <source>Allowed member groups</source>
-        <target>İzin verilen üye grupları</target>
+        <target>허가 된 구성원 그룹</target>
       </trans-unit>
       <trans-unit id="tl_calendar.groups.1">
         <source>These groups will be able to see the events in this calendar.</source>
-        <target>Bu gruplar bu takvimdeki etkinlikleri görebilir.</target>
+        <target>이러한 그룹은 이 캘린더의 이벤트를 볼 수 있습니다.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.tstamp.0">
         <source>Revision date</source>
-        <target>Düzenlenme tarihi</target>
+        <target>개정일자</target>
       </trans-unit>
       <trans-unit id="tl_calendar.tstamp.1">
         <source>Date and time of the latest revision</source>
-        <target>Son düzenlenme tarihi ve saati</target>
+        <target>최신 개정 날짜 및 시간</target>
       </trans-unit>
       <trans-unit id="tl_calendar.title_legend">
         <source>Title and redirect page</source>
-        <target>Başlık ve yönlendirme sayfası</target>
+        <target>제목 및 리디렉션 페이지</target>
       </trans-unit>
       <trans-unit id="tl_calendar.comments_legend">
         <source>Comments</source>
-        <target>Yorumlar</target>
+        <target>댓글</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected_legend">
         <source>Access protection</source>
-        <target>Erişim koruması</target>
+        <target>접근 보호</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feed_legend">
         <source>RSS/Atom feed</source>
-        <target>RSS/Atom akışı</target>
+        <target>RSS/Atom 피드</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_admin">
         <source>System administrator</source>
-        <target>Sistem yöneticisi</target>
+        <target>시스템 관리자</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_author">
         <source>Author of the event</source>
-        <target>Etkinliği oluşturan</target>
+        <target>이벤트 저자</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_both">
         <source>Author and system administrator</source>
-        <target>Yazar ve sistem yöneticisi</target>
+        <target>저자와 시스템 관리자</target>
       </trans-unit>
       <trans-unit id="tl_calendar.source_teaser">
         <source>Event teasers</source>
-        <target>Etkinlik tanıtımları</target>
+        <target>이벤트 티저</target>
       </trans-unit>
       <trans-unit id="tl_calendar.source_text">
         <source>Full articles</source>
-        <target>Tam makaleler</target>
+        <target>전체 기사</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feeds.0">
         <source>Calendar feeds</source>
-        <target>Takvim akışları</target>
+        <target>달력 입력</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feeds.1">
         <source>Manage calendar feeds</source>
-        <target>Takvim akışları yönetimi</target>
+        <target>달력 피드 관리</target>
       </trans-unit>
       <trans-unit id="tl_calendar.new.0">
         <source>New</source>
-        <target>Yeni</target>
+        <target>새로운</target>
       </trans-unit>
       <trans-unit id="tl_calendar.new.1">
         <source>Create a new calendar</source>
-        <target>Yeni bir takvim ekle</target>
+        <target>새로운 달력 생성</target>
       </trans-unit>
       <trans-unit id="tl_calendar.show">
         <source>Show the details of calendar ID %s</source>
-        <target>%s kodlu takvimin ayrıntılarını görüntüle</target>
+        <target>캘린더 ID %s의 상세 정보를 보여줍니다.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.edit">
         <source>Edit calendar ID %s</source>
-        <target>%s kodlu takvimi düzenle</target>
+        <target>달력 ID %s 편집</target>
       </trans-unit>
       <trans-unit id="tl_calendar.editmeta">
         <source>Edit the calendar settings</source>
-        <target>Takvim ayarlarını düzenle</target>
+        <target>달력 설정 변경</target>
       </trans-unit>
       <trans-unit id="tl_calendar.editheader">
         <source>Edit the settings of calendar ID %s</source>
-        <target>%s kodlu takvimin ayarlarını düzenle</target>
+        <target>달력 ID %s의 설정 변경</target>
       </trans-unit>
       <trans-unit id="tl_calendar.copy">
         <source>Duplicate calendar ID %s</source>
-        <target>%s kodlu takvimi kopyala</target>
+        <target>달력 ID %s 복제</target>
       </trans-unit>
       <trans-unit id="tl_calendar.delete">
         <source>Delete calendar ID %s</source>
-        <target>%s kodlu takvimi sil</target>
+        <target>달력 ID %s 삭제</target>
       </trans-unit>
     </body>
   </file>
