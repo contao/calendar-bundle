@@ -1,257 +1,254 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="contao/languages/languages/en/tl_module.php" source-language="en" target-language="es">
+  <file datatype="php" original="contao/languages/languages/en/tl_module.php" source-language="en" target-language="fa">
     <body>
       <trans-unit id="tl_module.cal_calendar.0">
         <source>Calendars</source>
-        <target>Calendarios</target>
+        <target>تقویم‌ها</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_calendar.1">
         <source>Please select one or more calendars.</source>
-        <target>Seleccionar uno o más calendarios</target>
+        <target>لطفا یک یا چند تقویم انتخاب نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_noSpan.0">
         <source>Shortened view</source>
-        <target>Vista resumida</target>
+        <target>مشاهده خلاصه</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_noSpan.1">
         <source>Show events only once even if they span multiple days.</source>
-        <target>Mostrar eventos solo una vez aun si se repiten en varios días.</target>
+        <target>رویدادها را فقط یک بار نشان می‌دهد حتی اگر چندین روز را پوشش دهند.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_hideRunning.0">
         <source>Hide running events</source>
-        <target>Ocultar eventos en ejecución</target>
+        <target>پنهان کردن رویدادهای جاری</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_hideRunning.1">
         <source>Do not show running events in the list of upcoming events.</source>
-        <target>No mostrar eventos en ejecución en la lista de eventos futuros.</target>
+        <target>رویدادهای جاری را در لیست رویدادهای آتی نمایش نده.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_startDay.0">
         <source>Week start day</source>
-        <target>Primer día de la semana</target>
+        <target>روز شروع هفته</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_startDay.1">
         <source>Here you can choose the week start day.</source>
-        <target>Permite seleccionar el día en el que inicia la semana.</target>
+        <target>اینجا می‌توانید روز شروع هفته را انتخاب نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_format.0">
         <source>Event list format</source>
-        <target>Formato</target>
+        <target>قالب فهرست رویداد</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_format.1">
         <source>Here you can choose the event list format.</source>
-        <target>Seleccionar un formato para la lista de eventos</target>
+        <target>اینجا می‌توانید یک قالب فهرست رویدادها انتخاب نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_ignoreDynamic.0">
         <source>Ignore URL parameters</source>
-        <target>Ignorar parámetros de URL</target>
+        <target>نادیده گرفتن پارمترهای نشانی وب</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_ignoreDynamic.1">
         <source>Do not switch the time period based on the date/month/year URL parameters.</source>
-        <target>No cambiar el periodo de tiempo basado en los parámetros date/month/year (fecha/mes/año) del URL.</target>
+        <target>سویچ نکردن دوره زمانی بر اساس پارامترهای نشانی وب تاریخ/ماه/ماه</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_order.0">
         <source>Sort order</source>
-        <target>Ordenamiento</target>
+        <target>ترتیب مرتب‌سازی</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_order.1">
         <source>Here you can choose the sort order.</source>
-        <target>Permite seleccionar el ordenamiento.</target>
+        <target>اینجا می‌توانید ترتیب مرتب‌سازی را انتخاب نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_readerModule.0">
         <source>Event reader module</source>
-        <target>Módulo de lector de eventos</target>
+        <target>ماژول رویدادخوان</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_readerModule.1">
         <source>Automatically switch to the event reader if an event has been selected.</source>
-        <target>Cambiar automaticamente al lector de eventos si un evento ha sido seleccionado.</target>
+        <target>اگر رویدادی انتخاب شده باشد به صورت خودکار به رویدادخوان تعویض خواهد شد</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_limit.0">
         <source>Number of events</source>
-        <target>Número de eventos</target>
+        <target>تعداد رویدادها</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_limit.1">
         <source>Here you can limit the number of events. Enter 0 to show all.</source>
-        <target>Limitar el número máximo de eventos (0 para mostrar todos los eventos)</target>
+        <target>اینجا می‌توانید تعداد رویدادها را برای نمایش مشخص نمایید. در صورتی که 0 وارد نمایید تمامی رویدادها نمایش داده خواهند شد.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_template.0">
         <source>Event template</source>
-        <target>Plantilla de eventos</target>
+        <target>قالب رویداد</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_template.1">
         <source>Here you can select an event template.</source>
-        <target>Aquí puede seleccionar una plantilla de evento.</target>
+        <target>اینجا می‌توانید یک قالب رویداد را انتخاب نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_ctemplate.0">
         <source>Calendar template</source>
-        <target>Plantilla del Calendario</target>
+        <target>قالب تقویم</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_ctemplate.1">
         <source>Here you can select a calendar template.</source>
-        <target>Aquí puede seleccionar una plantilla de calendario.</target>
+        <target>اینجا می‌توانید یک قالب تقویم انتخاب کنید.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_showQuantity.0">
         <source>Show number of events</source>
-        <target>Mostrar número de eventos</target>
+        <target>نمایش تعداد رویدادها</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_showQuantity.1">
         <source>Show the number of events of each month in the menu.</source>
-        <target>Mostrar el número de eventos de cada mes en el menú.</target>
+        <target>نمایش تعداد رویدادهای هر ماه در منو.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_featured.0">
         <source>Featured events</source>
-        <target>ventos especiales</target>
+        <target>رویدادهای ویژه</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_featured.1">
         <source>Here you can choose how featured events are handled.</source>
-        <target>Aquí puede elegir cómo se gestionan los eventos destacados.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_keepCanonical.0">
         <source>Use the current URL for canonical links</source>
-        <target>Utilice la URL actual para enlaces canónicos</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_keepCanonical.1">
         <source>Keep the current URL instead of the configured reader page for canonical links.</source>
-        <target>Mantenga la URL actual en lugar de la página del lector configurada para enlaces canónicos.</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_overview_legend">
         <source>Overview page</source>
-        <target>Página de descripción general </target>
+        <target>برگه‌ی بررسی کلی</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_list">
         <source>Event list</source>
-        <target>Lista de eventos</target>
+        <target>فهرست رویداد</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_day">
         <source>Day</source>
-        <target>Día</target>
+        <target>روز</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_month">
         <source>Month</source>
-        <target>Mes</target>
+        <target>ماه</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_year">
         <source>Year</source>
-        <target>Año</target>
+        <target>سال</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_all">
         <source>All events</source>
-        <target>Todos los eventos</target>
+        <target>همه رویدادها</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_upcoming">
         <source>Upcoming events</source>
-        <target>Eventos próximos</target>
+        <target>رویدادهای آینده</target>
       </trans-unit>
       <trans-unit id="tl_module.next_7">
         <source>+ 1 week</source>
-        <target>+ 1 semana</target>
+        <target>+ ۱ هفته</target>
       </trans-unit>
       <trans-unit id="tl_module.next_14">
         <source>+ 2 weeks</source>
-        <target>+ 2 semanas</target>
+        <target>+ ۲ هفته</target>
       </trans-unit>
       <trans-unit id="tl_module.next_30">
         <source>+ 1 month</source>
-        <target>+ 1 mes</target>
+        <target>+ ۱ ماه</target>
       </trans-unit>
       <trans-unit id="tl_module.next_90">
         <source>+ 3 months</source>
-        <target>+ 3 meses</target>
+        <target>+ ۳ ماه</target>
       </trans-unit>
       <trans-unit id="tl_module.next_180">
         <source>+ 6 months</source>
-        <target>+ 6 meses</target>
+        <target>+ ۶ ماه</target>
       </trans-unit>
       <trans-unit id="tl_module.next_365">
         <source>+ 1 year</source>
-        <target>+ 1 año</target>
+        <target>+ ۱ سال</target>
       </trans-unit>
       <trans-unit id="tl_module.next_two">
         <source>+ 2 years</source>
-        <target>+ 2 años</target>
+        <target>+ ۲ سال</target>
       </trans-unit>
       <trans-unit id="tl_module.next_cur_month">
         <source>of the current month</source>
-        <target>del mes actual</target>
+        <target>ماه جاری</target>
       </trans-unit>
       <trans-unit id="tl_module.next_cur_year">
         <source>of the current year</source>
-        <target>del año actual</target>
+        <target>سال جاری</target>
       </trans-unit>
       <trans-unit id="tl_module.next_next_month">
         <source>of the next month</source>
-        <target>del próximo mes</target>
+        <target>از ماه آینده</target>
       </trans-unit>
       <trans-unit id="tl_module.next_next_year">
         <source>of the next year</source>
-        <target>del próximo año</target>
+        <target>از سال آینده</target>
       </trans-unit>
       <trans-unit id="tl_module.next_all">
         <source>All upcoming events</source>
-        <target>Todos los eventos próximos</target>
+        <target>همه رویدادهای آینده</target>
       </trans-unit>
       <trans-unit id="tl_module.cal_past">
         <source>Past events</source>
-        <target>Eventos pasados</target>
+        <target>رویدادهای گذشته</target>
       </trans-unit>
       <trans-unit id="tl_module.past_7">
         <source>- 1 week</source>
-        <target>- 1 semana</target>
+        <target>- ۱ هفته</target>
       </trans-unit>
       <trans-unit id="tl_module.past_14">
         <source>- 2 weeks</source>
-        <target>- 2 semanas</target>
+        <target>- ۲ هفته</target>
       </trans-unit>
       <trans-unit id="tl_module.past_30">
         <source>- 1 month</source>
-        <target>- 1 mes</target>
+        <target>- ۱ ماه</target>
       </trans-unit>
       <trans-unit id="tl_module.past_90">
         <source>- 3 months</source>
-        <target>- 3 meses</target>
+        <target>- ۳ ماه</target>
       </trans-unit>
       <trans-unit id="tl_module.past_180">
         <source>- 6 months</source>
-        <target>- 6 meses</target>
+        <target>- ۶ ماه</target>
       </trans-unit>
       <trans-unit id="tl_module.past_365">
         <source>- 1 year</source>
-        <target>- 1 año</target>
+        <target>- ۱ سال</target>
       </trans-unit>
       <trans-unit id="tl_module.past_two">
         <source>- 2 years</source>
-        <target>- 2 años</target>
+        <target>- ۲ سال</target>
       </trans-unit>
       <trans-unit id="tl_module.past_cur_month">
         <source>of the current month</source>
-        <target>del mes actual</target>
+        <target>ماه جاری</target>
       </trans-unit>
       <trans-unit id="tl_module.past_cur_year">
         <source>of the current year</source>
-        <target>del año actual</target>
+        <target>سال جاری</target>
       </trans-unit>
       <trans-unit id="tl_module.past_prev_month">
         <source>of the previous month</source>
-        <target>del mes anterior</target>
+        <target>از ماه گذشته</target>
       </trans-unit>
       <trans-unit id="tl_module.past_prev_year">
         <source>of the previous year</source>
-        <target>del año anterior</target>
+        <target>از سال گذشته</target>
       </trans-unit>
       <trans-unit id="tl_module.past_all">
         <source>All past events</source>
-        <target>Todos los eventos pasados</target>
+        <target>همه رویدادهای گذشته</target>
       </trans-unit>
       <trans-unit id="tl_module.events.all_items">
         <source>Show all events</source>
-        <target>Mostrar todos los eventos</target>
+        <target>نمایش همه رویدادها</target>
       </trans-unit>
       <trans-unit id="tl_module.events.featured">
         <source>Show featured events only</source>
-        <target>Mostrar solo eventos destacados</target>
+        <target>نمایش فقط رویدادهای ویژه</target>
       </trans-unit>
       <trans-unit id="tl_module.events.unfeatured">
         <source>Skip featured events</source>
-        <target>Omitir eventos destacados</target>
+        <target>رد کردن رویدادهای ویژه</target>
       </trans-unit>
     </body>
   </file>
