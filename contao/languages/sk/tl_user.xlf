@@ -1,41 +1,41 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="contao/languages/en/tl_user.php" source-language="en" target-language="sl">
+  <file datatype="php" original="contao/languages/en/tl_user.php" source-language="en" target-language="sk">
     <body>
       <trans-unit id="tl_user.calendars.0">
         <source>Allowed calendars</source>
-        <target>Koledarji</target>
+        <target>Povolené kalendáre</target>
       </trans-unit>
       <trans-unit id="tl_user.calendars.1">
         <source>Here you can grant access to one or more calendars.</source>
-        <target>Izberite koledarje, ki jih želite omogočiti za uporabnika.</target>
+        <target>Prosím, vyberte kalendáre, ktoré chcete skupine povoliť.</target>
       </trans-unit>
       <trans-unit id="tl_user.calendarp.0">
         <source>Calendar permissions</source>
-        <target>Dovoljenja koledar</target>
+        <target>Oprávnenia pre kalendár</target>
       </trans-unit>
       <trans-unit id="tl_user.calendarp.1">
         <source>Here you can define the calendar permissions.</source>
-        <target>Tukaj lahko določite dovoljenja za koledar</target>
+        <target>Tu môžete definovať práva pre kalendár.</target>
       </trans-unit>
       <trans-unit id="tl_user.calendarfeeds.0">
         <source>Allowed calendar feeds</source>
-        <target>Dovoljeni izvlečki koledarja</target>
+        <target>Povolené feedy kalendára</target>
       </trans-unit>
       <trans-unit id="tl_user.calendarfeeds.1">
         <source>Here you can grant access to one or more calendar feeds.</source>
-        <target>Tu lahko dovolite dostop do enega ali več virov koledarjev.</target>
+        <target>Tu môžete povoliť prístup k jednému alebo viacerým kanálom kalendára.</target>
       </trans-unit>
       <trans-unit id="tl_user.calendarfeedp.0">
         <source>Calendar feed permissions</source>
-        <target>Dovoljenja za vir koledarja</target>
+        <target>Oprávnenia pre feed kalendár</target>
       </trans-unit>
       <trans-unit id="tl_user.calendarfeedp.1">
         <source>Here you can define the calendar feed permissions.</source>
-        <target>Tu lahko določite dovoljenja za vir koledarja.</target>
+        <target>Tu môžete definovať prístupové práva pre zvolený kanál.</target>
       </trans-unit>
       <trans-unit id="tl_user.calendars_legend">
         <source>Events permissions</source>
-        <target>Dovoljenja za dogodke</target>
+        <target>Oprávnenia pre udalosti</target>
       </trans-unit>
     </body>
   </file>
