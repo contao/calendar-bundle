@@ -1,121 +1,121 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="contao/languages/en/tl_calendar.php" source-language="en" target-language="ja">
+  <file datatype="php" original="contao/languages/en/tl_calendar.php" source-language="en" target-language="fr">
     <body>
       <trans-unit id="tl_calendar.title.0">
         <source>Title</source>
-        <target>題名</target>
+        <target>Titre</target>
       </trans-unit>
       <trans-unit id="tl_calendar.title.1">
         <source>Please enter the calendar title.</source>
-        <target>カレンダーの名前を入力してください。</target>
+        <target>Saisir le titre du calendrier.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.jumpTo.0">
         <source>Redirect page</source>
-        <target>リダイレクト先のページ</target>
+        <target>Page de redirection</target>
       </trans-unit>
       <trans-unit id="tl_calendar.jumpTo.1">
         <source>Please choose the event reader page to which visitors will be redirected when clicking an event.</source>
-        <target>イベントをクリックしたときに移動する、イベントリーダーのページを選択してください。</target>
+        <target>Sélectionner la page qui permettra aux visiteurs de lire le détail de l'événement après avoir cliqué sur celui-ci.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected.0">
         <source>Protect calendar</source>
-        <target>カレンダーの保護</target>
+        <target>Protéger le calendrier</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected.1">
         <source>Show events to certain member groups only.</source>
-        <target>特定のメンバーグループにだけイベントを表示します。</target>
+        <target>Afficher les événements à certains groupes de membres seulement.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.groups.0">
         <source>Allowed member groups</source>
-        <target>許可するメンバーグループ</target>
+        <target>Groupes de membres autorisés</target>
       </trans-unit>
       <trans-unit id="tl_calendar.groups.1">
         <source>These groups will be able to see the events in this calendar.</source>
-        <target>これらのグループが、このカレンダーのイベントを参照できます。</target>
+        <target>Ces groupes seront en mesure de voir les événements de ce calendrier.</target>
       </trans-unit>
       <trans-unit id="tl_calendar.tstamp.0">
         <source>Revision date</source>
-        <target>改訂日</target>
+        <target>Date de révision</target>
       </trans-unit>
       <trans-unit id="tl_calendar.tstamp.1">
         <source>Date and time of the latest revision</source>
-        <target>最新のリビジョンの日付と時刻</target>
+        <target>Date et heure de la dernière révision</target>
       </trans-unit>
       <trans-unit id="tl_calendar.title_legend">
         <source>Title and redirect page</source>
-        <target>題名とリダイレクト先のページ</target>
+        <target>Titre et page de redirection</target>
       </trans-unit>
       <trans-unit id="tl_calendar.protected_legend">
         <source>Access protection</source>
-        <target>アクセスの保護</target>
+        <target>Protection d'accès</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feed_legend">
         <source>RSS/Atom feed</source>
-        <target>RSS/Atomフィード</target>
+        <target>Flux RSS/Atom</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_admin">
         <source>System administrator</source>
-        <target>システム管理者</target>
+        <target>Administrateur système</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_author">
         <source>Author of the event</source>
-        <target>イベントの作成者</target>
+        <target>Auteur de l'événement</target>
       </trans-unit>
       <trans-unit id="tl_calendar.notify_both">
         <source>Author and system administrator</source>
-        <target>作成者とシステム管理者</target>
+        <target>Auteur et administrateur système</target>
       </trans-unit>
       <trans-unit id="tl_calendar.source_teaser">
         <source>Event teasers</source>
-        <target>イベントのティーザー</target>
+        <target>Accroche d'événements</target>
       </trans-unit>
       <trans-unit id="tl_calendar.source_text">
         <source>Full articles</source>
-        <target>記事全体</target>
+        <target>Articles complets</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feeds.0">
         <source>Calendar feeds</source>
-        <target>カレンダーのフィード</target>
+        <target>Flux RSS des calendriers</target>
       </trans-unit>
       <trans-unit id="tl_calendar.feeds.1">
         <source>Manage calendar feeds</source>
-        <target>カレンダーのフィードを管理</target>
+        <target>Gérer les flux RSS de calendrier</target>
       </trans-unit>
       <trans-unit id="tl_calendar.new.1">
         <source>Create a new calendar</source>
-        <target>新しいカレンダーを作成</target>
+        <target>Créer un nouveau calendrier</target>
       </trans-unit>
       <trans-unit id="tl_calendar.show.1">
         <source>Show the details of calendar ID %s</source>
-        <target>ID %sのカレンダーの詳細を表示</target>
+        <target>Afficher les détails du calendrier ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.edit.1">
         <source>Edit calendar ID %s</source>
-        <target>ID %sのカレンダーを編集</target>
+        <target>Éditer le calendrier ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.children.0">
         <source>Events</source>
-        <target>イベント</target>
+        <target>Calendrier/Événements</target>
       </trans-unit>
       <trans-unit id="tl_calendar.children.1">
         <source>Edit the events of calendar ID %s</source>
-        <target>ID %sのカレンダーのイベントを編集</target>
+        <target>Éditer les événements du calendrier ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.copy.0">
         <source>Duplicate</source>
-        <target>複製</target>
+        <target>Dupliquer</target>
       </trans-unit>
       <trans-unit id="tl_calendar.copy.1">
         <source>Duplicate calendar ID %s</source>
-        <target>ID %sのカレンダーを複製</target>
+        <target>Dupliquer le calendrier ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.delete.1">
         <source>Delete calendar ID %s</source>
-        <target>ID %sのカレンダーを削除</target>
+        <target>Supprimer le calendrier ID %s</target>
       </trans-unit>
       <trans-unit id="tl_calendar.tableLabel">
         <source>Calendar</source>
-        <target>カレンダー</target>
+        <target>Calendrier</target>
       </trans-unit>
     </body>
   </file>
